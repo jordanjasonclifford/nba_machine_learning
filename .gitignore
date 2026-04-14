@@ -1,0 +1,27 @@
+# virtual environment
+.venv/
+
+# python cache
+__pycache__/
+*.pyc
+
+# data outputs
+to_players_csvs/
+data/
+*.parquet
+
+ 
+
+# BUT track team game csvs AND warehouse game csvs
+!to_players_csvs/
+!to_players_csvs/*.csv
+!to_games_csvs/
+!to_games_csvs/*.csv
+!warehouse/
+!warehouse/*.csv
+
+# environment files
+.env
+
+# misc
+.DS_Store
