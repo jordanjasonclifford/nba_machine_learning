@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4433134.png
+Scottie Barnes4	F	24	6' 8"	237 lbs	Florida State	$38,661,750
+https://a.espncdn.com/i/headshots/nba/players/full/4395625.png
+RJ Barrett9	F	25	6' 6"	214 lbs	Duke	$27,705,357
+https://a.espncdn.com/i/headshots/nba/players/full/4431893.png
+Jamison Battle77	F	24	6' 7"	220 lbs	Ohio State	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/5106258.png
+Gradey Dick1	G	22	6' 7"	200 lbs	Kansas	$4,990,560
+https://a.espncdn.com/i/headshots/nba/players/full/4590360.png
+Chucky Hepburn24	G	23	6' 0"	190 lbs	Louisville	--
+https://a.espncdn.com/i/headshots/nba/players/full/3913176.png
+Brandon Ingram3	F	28	6' 8"	190 lbs	Duke	$38,095,238
+https://a.espncdn.com/i/headshots/nba/players/full/4431684.png
+Trayce Jackson-Davis32	F	26	6' 9"	245 lbs	Indiana	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/4067017.png
+A.J. Lawson0	G	25	6' 6"	179 lbs	South Carolina	$2,270,735
+https://a.espncdn.com/i/headshots/nba/players/full/4278580.png
+Sandro Mamukelashvili54	F	26	6' 9"	240 lbs	Seton Hall	$2,461,463
+https://a.espncdn.com/i/headshots/nba/players/full/4702656.png
+Alijah Martin55	G	24	6' 2"	210 lbs	Florida	--
+https://a.espncdn.com/i/headshots/nba/players/full/5107897.png
+Jonathan Mogbo2	F	24	6' 9"	225 lbs	San Francisco	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/5093267.png
+Collin Murray-Boyles12	F	20	6' 7"	245 lbs	South Carolina	$6,332,520
+https://a.espncdn.com/i/headshots/nba/players/full/3134908.png
+Jakob Poeltl19	C	30	7' 0"	253 lbs	Utah	$19,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/4395724.png
+Immanuel Quickley5	G	26	6' 2"	190 lbs	Kentucky	$32,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/4432241.png
+Jamal Shead23	G	23	6' 1"	200 lbs	Houston	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4023.png
+Garrett Temple17	G	39	6' 5"	195 lbs	LSU	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4684272.png
+Ja'Kobe Walter14	G	21	6' 4"	180 lbs	Baylor	$3,638,160

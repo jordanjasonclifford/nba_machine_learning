@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4431767.png
+Christian Braun0	G	24	6' 6"	220 lbs	Kansas	$4,921,797
+https://a.espncdn.com/i/headshots/nba/players/full/4065670.png
+Bruce Brown11	G	29	6' 4"	202 lbs	Miami	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/3064290.png
+Aaron Gordon32	F	30	6' 8"	235 lbs	Arizona	$22,841,455
+https://a.espncdn.com/i/headshots/nba/players/full/2528210.png
+Tim Hardaway Jr.10	G	34	6' 5"	205 lbs	Michigan	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4433607.png
+DaRon Holmes II14	F	23	6' 9"	225 lbs	Dayton	$3,218,760
+https://a.espncdn.com/i/headshots/nba/players/full/3138196.png
+Cameron Johnson23	F	30	6' 8"	210 lbs	North Carolina	$21,057,065
+https://a.espncdn.com/i/headshots/nba/players/full/3112335.png
+Nikola Jokic15	C	31	6' 11"	284 lbs	--	$55,224,526
+https://a.espncdn.com/i/headshots/nba/players/full/4898369.png
+Curtis Jones1	G	24	6' 3"	195 lbs	Iowa State	--
+https://a.espncdn.com/i/headshots/nba/players/full/4592427.png
+Spencer Jones21	F	24	6' 7"	225 lbs	Stanford	$623,967
+https://a.espncdn.com/i/headshots/nba/players/full/3135046.png
+Tyus Jones5	G	29	6' 0"	196 lbs	Duke	$514,682
+https://a.espncdn.com/i/headshots/nba/players/full/3936299.png
+Jamal Murray27	G	29	6' 4"	215 lbs	Kentucky	$46,394,100
+https://a.espncdn.com/i/headshots/nba/players/full/4431690.png
+Zeke Nnaji22	F	25	6' 10"	240 lbs	Arizona	$8,177,778
+https://a.espncdn.com/i/headshots/nba/players/full/4398390.png
+Jalen Pickett24	G	26	6' 2"	202 lbs	Siena	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/4593041.png
+David Roddy45	F	25	6' 4"	255 lbs	Colorado State	--
+https://a.espncdn.com/i/headshots/nba/players/full/4683834.png
+KJ Simpson25	G	23	6' 2"	189 lbs	Colorado	--
+https://a.espncdn.com/i/headshots/nba/players/full/4432181.png
+Julian Strawther3	G	23	6' 6"	205 lbs	Gonzaga	$2,674,200
+https://a.espncdn.com/i/headshots/nba/players/full/6477.png
+Jonas Valanciunas17	C	33	6' 11"	265 lbs	--	$10,395,000
+https://a.espncdn.com/i/headshots/nba/players/full/4576087.png
+Peyton Watson8	G	23	6' 8"	200 lbs	UCLA	$4,356,476

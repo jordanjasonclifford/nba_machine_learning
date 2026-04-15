@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4432573.png
+Paolo Banchero5	F	23	6' 10"	250 lbs	Duke	$15,334,769
+https://a.espncdn.com/i/headshots/nba/players/full/4066320.png
+Desmond Bane3	G	27	6' 6"	215 lbs	TCU	$36,725,670
+https://a.espncdn.com/i/headshots/nba/players/full/4348700.png
+Goga Bitadze35	C	26	6' 11"	250 lbs	--	$8,333,333
+https://a.espncdn.com/i/headshots/nba/players/full/4712849.png
+Anthony Black0	G	22	6' 7"	200 lbs	Arkansas	$7,970,280
+https://a.espncdn.com/i/headshots/nba/players/full/4278572.png
+Jamal Cain8	F	27	6' 7"	191 lbs	Oakland	--
+https://a.espncdn.com/i/headshots/nba/players/full/3133635.png
+Jevon Carter2	G	30	6' 0"	200 lbs	West Virginia	$871,000
+https://a.espncdn.com/i/headshots/nba/players/full/4277847.png
+Wendell Carter Jr.34	C	26	6' 10"	270 lbs	Duke	$10,850,000
+https://a.espncdn.com/i/headshots/nba/players/full/4397204.png
+Colin Castleton14	C	25	6' 10"	250 lbs	Florida	$2,191,897
+https://a.espncdn.com/i/headshots/nba/players/full/4702382.png
+Tristan da Silva23	F	24	6' 8"	217 lbs	Colorado	$3,809,520
+https://a.espncdn.com/i/headshots/nba/players/full/5105806.png
+Jett Howard13	G	22	6' 8"	215 lbs	Michigan	$5,529,720
+https://a.espncdn.com/i/headshots/nba/players/full/4065654.png
+Jonathan Isaac1	F	28	6' 10"	230 lbs	Florida State	$15,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4593034.png
+Alex Morales30	G	28	6' 6"	180 lbs	Wagner	--
+https://a.espncdn.com/i/headshots/nba/players/full/5214637.png
+Noah Penda93	F	21	6' 7"	215 lbs	--	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/5239561.png
+Jase Richardson11	G	20	6' 1"	180 lbs	Michigan State	$2,983,320
+https://a.espncdn.com/i/headshots/nba/players/full/4432165.png
+Jalen Suggs4	G	24	6' 5"	205 lbs	Gonzaga	$35,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4566434.png
+Franz Wagner22	F	24	6' 10"	220 lbs	Michigan	$38,661,750
+https://a.espncdn.com/i/headshots/nba/players/full/3150844.png
+Moritz Wagner21	F	28	6' 11"	245 lbs	Michigan	$5,000,000

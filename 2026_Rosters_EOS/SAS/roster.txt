@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/6578.png
+Harrison Barnes40	F	33	6' 7"	225 lbs	North Carolina	$19,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/6427.png
+Bismack Biyombo18	C	33	6' 8"	255 lbs	--	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/5061568.png
+Carter Bryant11	F	20	6' 6"	220 lbs	Arizona	$4,900,320
+https://a.espncdn.com/i/headshots/nba/players/full/4845367.png
+Stephon Castle5	G	21	6' 6"	215 lbs	UConn	$9,560,520
+https://a.espncdn.com/i/headshots/nba/players/full/4592479.png
+Julian Champagnie30	F	24	6' 7"	217 lbs	St. John's	$3,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4066259.png
+De'Aaron Fox4	G	28	6' 3"	185 lbs	Kentucky	$37,096,620
+https://a.espncdn.com/i/headshots/nba/players/full/5037871.png
+Dylan Harper2	G	20	6' 5"	215 lbs	Rutgers	$12,370,320
+https://a.espncdn.com/i/headshots/nba/players/full/4433618.png
+Harrison Ingram55	F	23	6' 5"	230 lbs	North Carolina	--
+https://a.espncdn.com/i/headshots/nba/players/full/4395723.png
+Keldon Johnson3	F	26	6' 5"	220 lbs	Kentucky	$17,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/4713010.png
+David Jones Garcia25	F	24	6' 4"	210 lbs	Memphis	--
+https://a.espncdn.com/i/headshots/nba/players/full/3064560.png
+Luke Kornet7	C	30	7' 1"	250 lbs	Vanderbilt	$11,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/3134916.png
+Jordan McLaughlin0	G	30	6' 0"	185 lbs	USC	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4432872.png
+Emanuel Miller14	F	25	6' 5"	215 lbs	TCU	--
+https://a.espncdn.com/i/headshots/nba/players/full/2489663.png
+Kelly Olynyk8	F	34	7' 0"	240 lbs	Gonzaga	$13,445,122
+https://a.espncdn.com/i/headshots/nba/players/full/2488653.png
+Mason Plumlee45	C	36	7' 0"	254 lbs	Duke	$593,864
+https://a.espncdn.com/i/headshots/nba/players/full/4395630.png
+Devin Vassell24	G	25	6' 5"	200 lbs	Florida State	$27,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4066317.png
+Lindy Waters III43	F	28	6' 5"	210 lbs	Oklahoma State	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/5104157.png
+Victor Wembanyama1	F	22	7' 4"	235 lbs	--	$13,376,880

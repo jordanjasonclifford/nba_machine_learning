@@ -1,0 +1,39 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4397886.png
+Charles Bassey	C	25	6' 10"	230 lbs	Western Kentucky	--
+https://a.espncdn.com/i/headshots/nba/players/full/6430.png
+Jimmy Butler III10	F	36	6' 6"	230 lbs	Marquette	$54,126,450
+https://a.espncdn.com/i/headshots/nba/players/full/4433149.png
+LJ Cryer18	G	24	6' 0"	200 lbs	Houston	--
+https://a.espncdn.com/i/headshots/nba/players/full/2326307.png
+Seth Curry31	G	35	6' 1"	185 lbs	Duke	$1,755,198
+https://a.espncdn.com/i/headshots/nba/players/full/3975.png
+Stephen Curry30	G	38	6' 2"	185 lbs	Davidson	$59,606,817
+https://a.espncdn.com/i/headshots/nba/players/full/6589.png
+Draymond Green23	F	36	6' 6"	230 lbs	Michigan State	$25,892,857
+https://a.espncdn.com/i/headshots/nba/players/full/3213.png
+Al Horford20	C	39	6' 8"	240 lbs	Florida	$5,685,000
+https://a.espncdn.com/i/headshots/nba/players/full/4897449.png
+Malevy Leons33	F	26	6' 9"	203 lbs	Bradley	--
+https://a.espncdn.com/i/headshots/nba/players/full/4066436.png
+De'Anthony Melton8	G	27	6' 2"	200 lbs	USC	$3,080,921
+https://a.espncdn.com/i/headshots/nba/players/full/4432171.png
+Moses Moody4	G	23	6' 5"	211 lbs	Arkansas	$11,574,074
+https://a.espncdn.com/i/headshots/nba/players/full/3134903.png
+Gary Payton II0	G	33	6' 2"	195 lbs	Oregon State	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4709138.png
+Brandin Podziemski2	G	23	6' 4"	205 lbs	Santa Clara	$3,687,960
+https://a.espncdn.com/i/headshots/nba/players/full/3102531.png
+Kristaps Porzingis7	C	30	7' 2"	240 lbs	--	$30,731,707
+https://a.espncdn.com/i/headshots/nba/players/full/4593016.png
+Quinten Post21	C	26	7' 0"	238 lbs	Boston College	$1,935,377
+https://a.espncdn.com/i/headshots/nba/players/full/4897262.png
+Will Richard3	G	23	6' 3"	206 lbs	Florida	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/4997536.png
+Gui Santos15	F	23	6' 7"	185 lbs	--	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/4592714.png
+Pat Spencer61	G	29	6' 2"	205 lbs	Northwestern	$857,804
+https://a.espncdn.com/i/headshots/nba/players/full/4397821.png
+Nate Williams19	G	27	6' 5"	205 lbs	Buffalo	--
+https://a.espncdn.com/i/headshots/nba/players/full/3074213.png
+Omer Yurtseven77	C	27	6' 11"	275 lbs	Memphis	--

@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4066328.png
+Jarrett Allen31	C	27	6' 9"	243 lbs	Texas	$20,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/3934723.png
+Thomas Bryant3	C	28	6' 9"	248 lbs	Indiana	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4702177.png
+Keon Ellis14	G	26	6' 4"	175 lbs	Alabama	$2,301,587
+https://a.espncdn.com/i/headshots/nba/players/full/4431734.png
+Tristan Enaruna21	F	24	6' 7"	220 lbs	Cleveland State	--
+https://a.espncdn.com/i/headshots/nba/players/full/3992.png
+James Harden1	G	36	6' 5"	220 lbs	Arizona State	$39,446,090
+https://a.espncdn.com/i/headshots/nba/players/full/4066757.png
+Sam Merrill5	G	29	6' 4"	205 lbs	Utah State	$8,482,143
+https://a.espncdn.com/i/headshots/nba/players/full/5177362.png
+Riley Minix12	F	25	6' 7"	230 lbs	Morehead State	--
+https://a.espncdn.com/i/headshots/nba/players/full/3908809.png
+Donovan Mitchell45	G	29	6' 2"	215 lbs	Louisville	$46,394,100
+https://a.espncdn.com/i/headshots/nba/players/full/4432158.png
+Evan Mobley4	C	24	6' 11"	215 lbs	USC	$46,394,100
+https://a.espncdn.com/i/headshots/nba/players/full/2580365.png
+Larry Nance Jr.22	F	33	6' 6"	245 lbs	Wyoming	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4701233.png
+Craig Porter Jr.9	G	26	6' 1"	180 lbs	Wichita State	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/5023693.png
+Tyrese Proctor24	G	22	6' 4"	185 lbs	Duke	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/4278046.png
+Olivier Sarr33	F	27	6' 10"	240 lbs	Kentucky	--
+https://a.espncdn.com/i/headshots/nba/players/full/3032979.png
+Dennis Schroder8	G	32	6' 1"	175 lbs	--	$14,104,000
+https://a.espncdn.com/i/headshots/nba/players/full/4065778.png
+Max Strus2	G	30	6' 5"	215 lbs	DePaul	$15,936,452
+https://a.espncdn.com/i/headshots/nba/players/full/5106268.png
+Nae'Qwan Tomlin35	F	25	6' 8"	210 lbs	Memphis	$718,150
+https://a.espncdn.com/i/headshots/nba/players/full/4683747.png
+Jaylon Tyson20	G	23	6' 6"	215 lbs	California	$3,492,480
+https://a.espncdn.com/i/headshots/nba/players/full/3912848.png
+Dean Wade32	F	29	6' 9"	228 lbs	Kansas State	$6,623,456

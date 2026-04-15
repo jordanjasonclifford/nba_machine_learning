@@ -1,0 +1,39 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4278039.png
+Nickeil Alexander-Walker7	G	27	6' 5"	205 lbs	Virginia Tech	$15,161,800
+https://a.espncdn.com/i/headshots/nba/players/full/4065673.png
+Tony Bradley13	C	28	6' 10"	248 lbs	North Carolina	--
+https://a.espncdn.com/i/headshots/nba/players/full/4869342.png
+Dyson Daniels5	G	23	6' 7"	199 lbs	--	$7,707,709
+https://a.espncdn.com/i/headshots/nba/players/full/4431941.png
+RayJ Dennis00	G	25	6' 2"	180 lbs	Baylor	--
+https://a.espncdn.com/i/headshots/nba/players/full/4585618.png
+Keshon Gilbert	G	22	6' 4"	200 lbs	Iowa State	--
+https://a.espncdn.com/i/headshots/nba/players/full/4712863.png
+Mouhamed Gueye18	F	23	6' 11"	210 lbs	Washington State	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/2990984.png
+Buddy Hield8	G	33	6' 4"	220 lbs	Oklahoma	$9,219,512
+https://a.espncdn.com/i/headshots/nba/players/full/4433623.png
+Caleb Houstan33	G	23	6' 8"	205 lbs	Michigan	$699,440
+https://a.espncdn.com/i/headshots/nba/players/full/4701230.png
+Jalen Johnson1	F	24	6' 8"	219 lbs	Duke	$30,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4280151.png
+Corey Kispert24	F	27	6' 6"	224 lbs	Gonzaga	$13,975,000
+https://a.espncdn.com/i/headshots/nba/players/full/4431778.png
+Christian Koloko35	C	25	6' 11"	225 lbs	Arizona	--
+https://a.espncdn.com/i/headshots/nba/players/full/4433247.png
+Jonathan Kuminga0	F	23	6' 7"	225 lbs	--	$22,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/3146557.png
+Jock Landale31	C	30	6' 11"	255 lbs	Saint Mary's	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/2490149.png
+CJ McCollum3	G	34	6' 3"	190 lbs	Lehigh	$30,666,666
+https://a.espncdn.com/i/headshots/nba/players/full/4873201.png
+Asa Newell14	F	20	6' 10"	220 lbs	Georgia	$3,237,480
+https://a.espncdn.com/i/headshots/nba/players/full/4431680.png
+Onyeka Okongwu17	F	25	6' 10"	240 lbs	USC	$15,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5211175.png
+Zaccharie Risacher10	F	21	6' 8"	200 lbs	--	$13,197,720
+https://a.espncdn.com/i/headshots/nba/players/full/3137259.png
+Gabe Vincent4	G	29	6' 2"	200 lbs	UC Santa Barbara	$11,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/4279118.png
+Keaton Wallace2	G	27	6' 3"	185 lbs	UTSA	$2,296,274

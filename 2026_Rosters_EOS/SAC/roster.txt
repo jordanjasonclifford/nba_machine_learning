@@ -1,0 +1,37 @@
+Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4431679.png
+Precious Achiuwa9	PF	26	6' 8"	243 lbs	Memphis	$2,111,516
+https://a.espncdn.com/i/headshots/nba/players/full/4433246.png
+Patrick Baldwin Jr.23	G	23	6' 9"	220 lbs	Milwaukee	--
+https://a.espncdn.com/i/headshots/nba/players/full/4433174.png
+Dylan Cardwell32	C	24	6' 10"	255 lbs	Auburn	$871,000
+https://a.espncdn.com/i/headshots/nba/players/full/4433188.png
+Devin Carter22	G	24	6' 2"	195 lbs	Providence	$4,923,720
+https://a.espncdn.com/i/headshots/nba/players/full/4702384.png
+Nique Clifford5	G	24	6' 5"	175 lbs	Colorado State	$3,108,120
+https://a.espncdn.com/i/headshots/nba/players/full/3978.png
+DeMar DeRozan10	G	36	6' 6"	220 lbs	USC	$24,570,000
+https://a.espncdn.com/i/headshots/nba/players/full/3914285.png
+Drew Eubanks19	F	29	6' 10"	245 lbs	Oregon State	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4683024.png
+Killian Hayes3	G	24	6' 4"	195 lbs	--	--
+https://a.espncdn.com/i/headshots/nba/players/full/4065732.png
+De'Andre Hunter15	F	28	6' 7"	221 lbs	Virginia	$23,303,571
+https://a.espncdn.com/i/headshots/nba/players/full/3064440.png
+Zach LaVine8	G	31	6' 5"	200 lbs	UCLA	$47,499,660
+https://a.espncdn.com/i/headshots/nba/players/full/2528588.png
+Doug McDermott7	F	34	6' 7"	225 lbs	Creighton	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4066262.png
+Malik Monk0	G	28	6' 3"	200 lbs	Kentucky	$18,797,618
+https://a.espncdn.com/i/headshots/nba/players/full/4594327.png
+Keegan Murray13	F	25	6' 8"	225 lbs	Iowa	$11,144,093
+https://a.espncdn.com/i/headshots/nba/players/full/4279318.png
+Daeqwon Plowden29	G	27	6' 6"	216 lbs	Bowling Green	--
+https://a.espncdn.com/i/headshots/nba/players/full/4898371.png
+Maxime Raynaud42	C	23	7' 1"	250 lbs	Stanford	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/3155942.png
+Domantas Sabonis11	F	29	6' 10"	240 lbs	Gonzaga	$43,636,000
+https://a.espncdn.com/i/headshots/nba/players/full/4432117.png
+Isaiah Stevens24	G	25	5' 11"	185 lbs	Colorado State	--
+https://a.espncdn.com/i/headshots/nba/players/full/3468.png
+Russell Westbrook18	G	37	6' 4"	200 lbs	UCLA	$2,296,274

@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4433268.png
+Trey Alexander23	G	22	6' 5"	185 lbs	Creighton	--
+https://a.espncdn.com/i/headshots/nba/players/full/4397136.png
+Saddiq Bey41	G	27	6' 8"	215 lbs	Villanova	$6,118,644
+https://a.espncdn.com/i/headshots/nba/players/full/4432180.png
+Hunter Dickinson4	C	25	7' 1"	255 lbs	Kansas	--
+https://a.espncdn.com/i/headshots/nba/players/full/5144091.png
+Jeremiah Fears0	G	19	6' 3"	190 lbs	Oklahoma	$7,520,040
+https://a.espncdn.com/i/headshots/nba/players/full/4683750.png
+Jordan Hawkins24	G	23	6' 5"	190 lbs	UConn	$4,741,320
+https://a.espncdn.com/i/headshots/nba/players/full/4277813.png
+Herbert Jones2	F	27	6' 7"	206 lbs	Alabama	$13,937,574
+https://a.espncdn.com/i/headshots/nba/players/full/3442.png
+DeAndre Jordan6	C	37	6' 11"	265 lbs	Texas A&M	$2,269,880
+https://a.espncdn.com/i/headshots/nba/players/full/3155535.png
+Kevon Looney55	F	30	6' 9"	222 lbs	UCLA	$8,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4997538.png
+Karlo Matkovic17	F	25	6' 10"	231 lbs	--	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4576086.png
+Bryce McGowens11	G	23	6' 6"	190 lbs	Nebraska	$724,598
+https://a.espncdn.com/i/headshots/nba/players/full/5061589.png
+Yves Missi21	C	21	6' 11"	235 lbs	Baylor	$3,353,040
+https://a.espncdn.com/i/headshots/nba/players/full/4397688.png
+Trey Murphy III25	F	25	6' 8"	206 lbs	Virginia	$25,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/3907497.png
+Dejounte Murray5	G	29	6' 4"	180 lbs	Washington	$30,801,103
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Josh Oduro13	C	25	6' 9"	240 lbs	Providence	--
+https://a.espncdn.com/i/headshots/nba/players/full/4432185.png
+Micah Peavy14	G	24	6' 7"	220 lbs	Georgetown	$1,272,970
+https://a.espncdn.com/i/headshots/nba/players/full/4277956.png
+Jordan Poole3	G	26	6' 4"	194 lbs	Michigan	$31,848,215
+https://a.espncdn.com/i/headshots/nba/players/full/4869780.png
+Derik Queen22	C	21	6' 9"	250 lbs	Maryland	$5,157,960
+https://a.espncdn.com/i/headshots/nba/players/full/4395628.png
+Zion Williamson1	F	25	6' 6"	284 lbs	Duke	$39,446,090

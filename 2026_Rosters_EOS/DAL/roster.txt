@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4277848.png
+Marvin Bagley III35	F	27	6' 10"	235 lbs	Duke	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4432582.png
+Max Christie00	G	23	6' 5"	190 lbs	Michigan State	$7,714,286
+https://a.espncdn.com/i/headshots/nba/players/full/4701208.png
+Moussa Cisse30	C	23	6' 11"	220 lbs	Memphis	--
+https://a.espncdn.com/i/headshots/nba/players/full/5041939.png
+Cooper Flagg32	F	19	6' 9"	205 lbs	Duke	$14,386,320
+https://a.espncdn.com/i/headshots/nba/players/full/4278049.png
+Daniel Gafford21	F	27	6' 10"	265 lbs	Arkansas	$14,386,320
+https://a.espncdn.com/i/headshots/nba/players/full/6442.png
+Kyrie Irving11	G	34	6' 2"	195 lbs	Duke	$36,566,002
+https://a.espncdn.com/i/headshots/nba/players/full/5170947.png
+AJ Johnson8	G	21	6' 5"	160 lbs	--	$3,090,480
+https://a.espncdn.com/i/headshots/nba/players/full/4683688.png
+Dereck Lively II2	C	22	7' 1"	230 lbs	Duke	$5,253,360
+https://a.espncdn.com/i/headshots/nba/players/full/4278594.png
+Naji Marshall13	F	28	6' 6"	220 lbs	Xavier	$9,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/3138160.png
+Caleb Martin16	F	30	6' 5"	205 lbs	Nevada	$9,594,044
+https://a.espncdn.com/i/headshots/nba/players/full/6609.png
+Khris Middleton20	F	34	6' 7"	222 lbs	Texas A&M	$33,926,296
+https://a.espncdn.com/i/headshots/nba/players/full/4433629.png
+Ryan Nembhard9	G	23	5' 11"	180 lbs	Gonzaga	$321,875
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+John Poulakidas1	G	23	6' 6"	205 lbs	Yale	--
+https://a.espncdn.com/i/headshots/nba/players/full/2531367.png
+Dwight Powell7	F	34	6' 10"	240 lbs	Stanford	$4,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5167876.png
+Tyler Smith23	F	21	6' 9"	224 lbs	--	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/6475.png
+Klay Thompson31	G	36	6' 5"	220 lbs	Washington State	$16,666,667
+https://a.espncdn.com/i/headshots/nba/players/full/4278078.png
+P.J. Washington25	F	27	6' 7"	230 lbs	Kentucky	$14,152,174
+https://a.espncdn.com/i/headshots/nba/players/full/4397040.png
+Brandon Williams10	G	26	6' 1"	190 lbs	Arizona	$2,270,735

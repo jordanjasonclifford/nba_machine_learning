@@ -1,0 +1,39 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4873138.png
+Ace Bailey19	G	19	6' 9"	200 lbs	Rutgers	$9,069,840
+https://a.espncdn.com/i/headshots/nba/players/full/4432646.png
+Kennedy Chandler0	G	23	5' 11"	170 lbs	Tennessee	--
+https://a.espncdn.com/i/headshots/nba/players/full/4683766.png
+Isaiah Collier8	G	21	6' 4"	210 lbs	USC	$2,638,200
+https://a.espncdn.com/i/headshots/nba/players/full/4684793.png
+Kyle Filipowski22	F	22	6' 11"	250 lbs	Duke	$3,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4433627.png
+Keyonte George3	G	22	6' 4"	185 lbs	Baylor	$4,278,960
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Hayden Gray3	G	22	6' 4"	190 lbs	UC San Diego	--
+https://a.espncdn.com/i/headshots/nba/players/full/4397449.png
+Elijah Harkless16	G	26	6' 3"	195 lbs	UNLV	--
+https://a.espncdn.com/i/headshots/nba/players/full/4396963.png
+Blake Hinson2	F	26	6' 8"	230 lbs	Pittsburgh	--
+https://a.espncdn.com/i/headshots/nba/players/full/4277961.png
+Jaren Jackson Jr.20	F	26	6' 10"	242 lbs	Michigan State	$35,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4433136.png
+Walker Kessler24	C	24	7' 2"	245 lbs	Auburn	$4,878,938
+https://a.espncdn.com/i/headshots/nba/players/full/3134932.png
+John Konchar55	G	30	6' 5"	210 lbs	Purdue Fort Wayne	$6,165,000
+https://a.espncdn.com/i/headshots/nba/players/full/3449.png
+Kevin Love42	F	37	6' 10"	251 lbs	UCLA	$4,150,000
+https://a.espncdn.com/i/headshots/nba/players/full/4066336.png
+Lauri Markkanen23	F	28	7' 1"	240 lbs	Arizona	$46,394,100
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Bez Mbeng21	G	23	6' 4"	185 lbs	Yale	--
+https://a.espncdn.com/i/headshots/nba/players/full/3133602.png
+Svi Mykhailiuk10	G	28	6' 7"	205 lbs	Kansas	$3,675,000
+https://a.espncdn.com/i/headshots/nba/players/full/3102530.png
+Jusuf Nurkic30	C	31	6' 11"	290 lbs	--	$19,375,000
+https://a.espncdn.com/i/headshots/nba/players/full/5105839.png
+Brice Sensabaugh28	F	22	6' 6"	235 lbs	Ohio State	$2,693,760
+https://a.espncdn.com/i/headshots/nba/players/full/4432827.png
+Oscar Tshiebwe34	C	26	6' 8"	255 lbs	Kentucky	--
+https://a.espncdn.com/i/headshots/nba/players/full/4895758.png
+Cody Williams5	F	21	6' 8"	190 lbs	Colorado	$5,742,480

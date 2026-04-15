@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4066261.png
+Bam Adebayo13	C	28	6' 9"	260 lbs	Kentucky	$37,096,620
+https://a.espncdn.com/i/headshots/nba/players/full/3899664.png
+Simone Fontecchio0	F	30	6' 7"	220 lbs	--	$8,307,692
+https://a.espncdn.com/i/headshots/nba/players/full/4431772.png
+Myron Gardner15	F	24	6' 5"	225 lbs	Little Rock	$395,029
+https://a.espncdn.com/i/headshots/nba/players/full/4700818.png
+Vladislav Goldin50	C	24	7' 0"	255 lbs	Michigan	--
+https://a.espncdn.com/i/headshots/nba/players/full/4395725.png
+Tyler Herro14	G	26	6' 5"	205 lbs	Kentucky	$31,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5214640.png
+Kasparas Jakucionis25	G	19	6' 5"	205 lbs	Illinois	$3,658,800
+https://a.espncdn.com/i/headshots/nba/players/full/4432848.png
+Jaime Jaquez Jr.11	F	25	6' 6"	230 lbs	UCLA	$3,861,600
+https://a.espncdn.com/i/headshots/nba/players/full/4431786.png
+Keshad Johnson16	F	24	6' 6"	230 lbs	Arizona	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4997528.png
+Nikola Jovic5	F	22	6' 10"	240 lbs	--	$4,445,417
+https://a.espncdn.com/i/headshots/nba/players/full/4432645.png
+Trevor Keels8	G	22	6' 4"	221 lbs	Duke	--
+https://a.espncdn.com/i/headshots/nba/players/full/4601025.png
+Pelle Larsson9	G	25	6' 5"	215 lbs	Arizona	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4278053.png
+Davion Mitchell45	G	27	6' 0"	210 lbs	Baylor	$11,600,000
+https://a.espncdn.com/i/headshots/nba/players/full/2595516.png
+Norman Powell24	G	32	6' 4"	215 lbs	UCLA	$20,482,758
+https://a.espncdn.com/i/headshots/nba/players/full/4066993.png
+Dru Smith12	G	28	6' 2"	200 lbs	Missouri	$2,378,870
+https://a.espncdn.com/i/headshots/nba/players/full/5105623.png
+Kel'el Ware7	C	21	7' 0"	250 lbs	Indiana	$4,443,360
+https://a.espncdn.com/i/headshots/nba/players/full/3059319.png
+Andrew Wiggins22	F	31	6' 7"	210 lbs	Kansas	$28,223,214
+https://a.espncdn.com/i/headshots/nba/players/full/4433133.png
+Jahmir Young17	G	25	6' 0"	185 lbs	Maryland	--

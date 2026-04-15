@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/2991235.png
+Steven Adams12	C	32	6' 11"	265 lbs	Pittsburgh	$14,130,434
+https://a.espncdn.com/i/headshots/nba/players/full/3102529.png
+Clint Capela30	C	31	6' 10"	256 lbs	--	$6,700,000
+https://a.espncdn.com/i/headshots/nba/players/full/4592857.png
+Isaiah Crawford27	F	24	6' 6"	220 lbs	Louisiana Tech	--
+https://a.espncdn.com/i/headshots/nba/players/full/4576085.png
+JD Davison4	G	23	6' 1"	195 lbs	Alabama	$2,270,735
+https://a.espncdn.com/i/headshots/nba/players/full/3202.png
+Kevin Durant7	F	37	6' 11"	240 lbs	Texas	$54,708,609
+https://a.espncdn.com/i/headshots/nba/players/full/4433192.png
+Tari Eason17	F	24	6' 8"	215 lbs	LSU	$5,675,766
+https://a.espncdn.com/i/headshots/nba/players/full/2578185.png
+Dorian Finney-Smith2	F	32	6' 7"	220 lbs	Florida	$12,700,000
+https://a.espncdn.com/i/headshots/nba/players/full/3209.png
+Jeff Green32	F	39	6' 8"	235 lbs	Georgetown	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/3922230.png
+Aaron Holiday0	G	29	6' 0"	185 lbs	UCLA	--
+https://a.espncdn.com/i/headshots/nba/players/full/4592965.png
+Tristen Newton13	G	24	6' 5"	190 lbs	UConn	--
+https://a.espncdn.com/i/headshots/nba/players/full/4065663.png
+Josh Okogie20	G	27	6' 4"	213 lbs	Georgia Tech	$7,750,000
+https://a.espncdn.com/i/headshots/nba/players/full/4871144.png
+Alperen Sengun28	C	23	6' 11"	243 lbs	--	$33,944,954
+https://a.espncdn.com/i/headshots/nba/players/full/4711272.png
+Reed Sheppard15	G	21	6' 2"	185 lbs	Kentucky	$10,603,560
+https://a.espncdn.com/i/headshots/nba/players/full/4432639.png
+Jabari Smith Jr.10	F	22	6' 11"	220 lbs	Auburn	$12,350,392
+https://a.espncdn.com/i/headshots/nba/players/full/3136777.png
+Jae'Sean Tate8	F	30	6' 4"	230 lbs	Ohio State	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4684740.png
+Amen Thompson1	G	23	6' 7"	200 lbs	--	$9,690,600
+https://a.espncdn.com/i/headshots/nba/players/full/2991230.png
+Fred VanVleet5	G	32	6' 0"	197 lbs	Wichita State	$25,000,000

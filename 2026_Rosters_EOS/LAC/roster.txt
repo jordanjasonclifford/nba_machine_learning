@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/3416.png
+Nicolas Batum33	F	37	6' 7"	230 lbs	--	$5,601,600
+https://a.espncdn.com/i/headshots/nba/players/full/6580.png
+Bradley Beal0	G	32	6' 4"	207 lbs	Florida	$5,354,000
+https://a.espncdn.com/i/headshots/nba/players/full/3037789.png
+Bogdan Bogdanovic7	G	33	6' 5"	225 lbs	--	$16,020,000
+https://a.espncdn.com/i/headshots/nba/players/full/4845363.png
+Cam Christie12	G	20	6' 5"	190 lbs	Minnesota	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/3908845.png
+John Collins20	F	28	6' 9"	226 lbs	Wake Forest	$26,580,000
+https://a.espncdn.com/i/headshots/nba/players/full/2991139.png
+Kris Dunn8	G	32	6' 3"	205 lbs	Providence	$5,426,000
+https://a.espncdn.com/i/headshots/nba/players/full/4396907.png
+Darius Garland10	G	26	6' 1"	192 lbs	Vanderbilt	$39,446,090
+https://a.espncdn.com/i/headshots/nba/players/full/4432170.png
+Isaiah Jackson23	F	24	6' 8"	205 lbs	Kentucky	$7,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/3936099.png
+Derrick Jones Jr.5	F	29	6' 6"	210 lbs	UNLV	$10,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/6450.png
+Kawhi Leonard2	F	34	6' 6"	225 lbs	San Diego State	$50,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/3448.png
+Brook Lopez11	C	38	7' 1"	282 lbs	Stanford	$8,750,000
+https://a.espncdn.com/i/headshots/nba/players/full/4683634.png
+Bennedict Mathurin9	G	23	6' 5"	210 lbs	Arizona	$9,187,573
+https://a.espncdn.com/i/headshots/nba/players/full/4396818.png
+Jordan Miller22	G	26	6' 5"	194 lbs	Miami	$712,637
+https://a.espncdn.com/i/headshots/nba/players/full/5108024.png
+Yanic Konan Niederhauser14	C	23	6' 11"	242 lbs	Penn State	$2,743,800
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Norchad Omier55	F	24	6' 5"	248 lbs	Baylor	--
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Sean Pedulla00	G	23	6' 1"	195 lbs	Ole Miss	--
+https://a.espncdn.com/i/headshots/nba/players/full/4702352.png
+Kobe Sanders4	G	23	6' 8"	207 lbs	Nevada	--
+https://a.espncdn.com/i/headshots/nba/players/full/4683749.png
+TyTy Washington Jr.15	G	24	6' 3"	195 lbs	Kentucky	--

@@ -83,9 +83,9 @@ def main():
         out_path = os.path.join(OUT_DIR, out_file)
 
         # Skip if already extracted
-        if os.path.exists(out_path):
-            print(f"Skipping {team_abbr} (already exists): {out_path}")
-            continue
+        # if os.path.exists(out_path):
+        #     print(f"Skipping {team_abbr} (already exists): {out_path}")
+        #     continue
 
         print(f"\n===== {team_abbr} ({team_id}) =====")
 

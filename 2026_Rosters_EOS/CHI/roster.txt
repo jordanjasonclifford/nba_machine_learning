@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4711294.png
+Matas Buzelis14	F	21	6' 8"	209 lbs	--	$5,455,560
+https://a.espncdn.com/i/headshots/nba/players/full/4066650.png
+Zach Collins12	F	28	6' 9"	250 lbs	Gonzaga	$18,080,496
+https://a.espncdn.com/i/headshots/nba/players/full/4684275.png
+Rob Dillingham7	G	21	6' 2"	175 lbs	Kentucky	$6,576,120
+https://a.espncdn.com/i/headshots/nba/players/full/5242496.png
+Noa Essengue24	F	19	6' 8"	200 lbs	--	$5,429,520
+https://a.espncdn.com/i/headshots/nba/players/full/4871145.png
+Josh Giddey3	G	23	6' 7"	216 lbs	--	$25,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4592933.png
+Mouhamadou Gueye16	F	27	6' 9"	210 lbs	Pittsburgh	--
+https://a.espncdn.com/i/headshots/nba/players/full/4395626.png
+Tre Jones30	G	26	6' 1"	185 lbs	Duke	$8,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5159895.png
+Yuki Kawamura8	G	24	5' 7"	159 lbs	--	--
+https://a.espncdn.com/i/headshots/nba/players/full/4397071.png
+Mac McClung5	G	27	6' 2"	185 lbs	Texas Tech	--
+https://a.espncdn.com/i/headshots/nba/players/full/5044385.png
+Leonard Miller11	F	22	6' 10"	220 lbs	--	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/4432822.png
+Isaac Okoro35	F	25	6' 4"	225 lbs	Auburn	$11,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5107156.png
+Lachlan Olbrich47	C	22	6' 8"	236 lbs	UC Riverside	--
+https://a.espncdn.com/i/headshots/nba/players/full/4278076.png
+Nick Richards13	C	28	6' 11"	245 lbs	Kentucky	$5,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4277811.png
+Collin Sexton2	G	27	6' 3"	190 lbs	Alabama	$19,170,000
+https://a.espncdn.com/i/headshots/nba/players/full/4351851.png
+Anfernee Simons22	G	26	6' 3"	200 lbs	--	$27,678,571
+https://a.espncdn.com/i/headshots/nba/players/full/4397189.png
+Jalen Smith25	F	26	6' 8"	215 lbs	Maryland	$9,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4431687.png
+Patrick Williams44	F	24	6' 6"	215 lbs	Florida State	$18,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4017844.png
+Guerschon Yabusele28	F	30	6' 7"	265 lbs	--	$5,500,000

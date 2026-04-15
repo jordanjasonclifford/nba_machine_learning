@@ -1,0 +1,45 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4593125.png
+Santi Aldama7	F	25	7' 0"	215 lbs	Loyola Maryland	$18,485,916
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Adama Bal72	G	22	6' 7"	200 lbs	Arizona	--
+https://a.espncdn.com/i/headshots/nba/players/full/2581018.png
+Kentavious Caldwell-Pope3	G	33	6' 5"	204 lbs	Georgia	$21,621,500
+https://a.espncdn.com/i/headshots/nba/players/full/3906665.png
+Brandon Clarke15	F	29	6' 8"	215 lbs	Gonzaga	$12,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/4896372.png
+Walter Clayton Jr.4	G	23	6' 4"	195 lbs	Florida	$3,991,320
+https://a.espncdn.com/i/headshots/nba/players/full/4903027.png
+Cedric Coward23	F	22	6' 5"	206 lbs	Washington State	$5,715,120
+https://a.espncdn.com/i/headshots/nba/players/full/4600663.png
+Zach Edey14	C	24	7' 3"	305 lbs	Purdue	$6,045,000
+https://a.espncdn.com/i/headshots/nba/players/full/3986.png
+Taj Gibson67	F	40	6' 9"	232 lbs	USC	$960,753
+https://a.espncdn.com/i/headshots/nba/players/full/4684806.png
+Taylor Hendricks22	F	22	6' 9"	215 lbs	UCF	$6,127,080
+https://a.espncdn.com/i/headshots/nba/players/full/5105550.png
+GG Jackson45	F	21	6' 9"	210 lbs	South Carolina	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/4065733.png
+Ty Jerome2	G	28	6' 5"	195 lbs	Virginia	$8,781,000
+https://a.espncdn.com/i/headshots/nba/players/full/4683934.png
+Jahmai Mashack21	G	23	6' 3"	197 lbs	Tennessee	--
+https://a.espncdn.com/i/headshots/nba/players/full/4279888.png
+Ja Morant12	G	26	6' 2"	174 lbs	Murray State	$39,446,090
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Toby Okani5	F	24	6' 8"	210 lbs	West Virginia	--
+https://a.espncdn.com/i/headshots/nba/players/full/4431785.png
+Scotty Pippen Jr.1	G	25	6' 2"	170 lbs	Vanderbilt	$2,270,735
+https://a.espncdn.com/i/headshots/nba/players/full/4595400.png
+Olivier-Maxence Prosper18	F	23	6' 7"	230 lbs	Marquette	$527,879
+https://a.espncdn.com/i/headshots/nba/players/full/5099752.png
+Rayan Rupert21	G	21	6' 7"	205 lbs	--	--
+https://a.espncdn.com/i/headshots/nba/players/full/4781746.png
+Javon Small10	G	23	6' 1"	190 lbs	West Virginia	--
+https://a.espncdn.com/i/headshots/nba/players/full/4433083.png
+Cam Spencer24	G	26	6' 3"	205 lbs	UConn	$2,537,989
+https://a.espncdn.com/i/headshots/nba/players/full/5112087.png
+Jaylen Wells0	F	22	6' 7"	206 lbs	Washington State	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4432735.png
+Dariq Whitehead0	F	21	6' 6"	220 lbs	Duke	$3,262,560
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Lucas Williamson55	G	27	6' 4"	205 lbs	Loyola Chicago	--

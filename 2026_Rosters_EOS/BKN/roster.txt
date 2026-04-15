@@ -1,0 +1,39 @@
+Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4397018.png
+Ochai Agbaji30	G	25	6' 5"	215 lbs	Kansas	$6,383,525
+https://a.espncdn.com/i/headshots/nba/players/full/4278067.png
+Nic Claxton33	C	26	6' 11"	215 lbs	Georgia	$25,352,272
+https://a.espncdn.com/i/headshots/nba/players/full/4712896.png
+Noah Clowney21	F	21	6' 10"	210 lbs	Alabama	$3,398,640
+https://a.espncdn.com/i/headshots/nba/players/full/5175643.png
+Egor Demin8	G	20	6' 8"	200 lbs	BYU	$6,889,200
+https://a.espncdn.com/i/headshots/nba/players/full/4432887.png
+Tyson Etienne10	G	26	6' 0"	200 lbs	Wichita State	--
+https://a.espncdn.com/i/headshots/nba/players/full/5174655.png
+Chaney Johnson31	F	23	6' 8"	225 lbs	Auburn	--
+https://a.espncdn.com/i/headshots/nba/players/full/4432821.png
+E.J. Liddell9	F	25	6' 6"	240 lbs	Ohio State	--
+https://a.espncdn.com/i/headshots/nba/players/full/3907823.png
+Terance Mann14	G	29	6' 6"	215 lbs	Florida State	$15,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/4687718.png
+Josh Minott00	F	23	6' 8"	205 lbs	Memphis	$2,378,870
+https://a.espncdn.com/i/headshots/nba/players/full/4278104.png
+Michael Porter Jr.17	F	27	6' 10"	218 lbs	Missouri	$38,333,050
+https://a.espncdn.com/i/headshots/nba/players/full/5037873.png
+Drake Powell4	G	20	6' 5"	195 lbs	North Carolina	$3,372,240
+https://a.espncdn.com/i/headshots/nba/players/full/5242502.png
+Ben Saraf77	G	19	6' 6"	200 lbs	--	$2,884,560
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Trevon Scott13	F	29	6' 8"	225 lbs	Cincinnati	--
+https://a.espncdn.com/i/headshots/nba/players/full/4432194.png
+Day'Ron Sharpe20	C	24	6' 10"	265 lbs	North Carolina	$6,250,000
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Malachi Smith18	G	26	6' 4"	205 lbs	Gonzaga	--
+https://a.espncdn.com/i/headshots/nba/players/full/5279130.png
+Nolan Traore88	G	19	6' 3"	185 lbs	--	$3,811,560
+https://a.espncdn.com/i/headshots/nba/players/full/4433137.png
+Ziaire Williams1	F	24	6' 9"	185 lbs	Stanford	$6,250,000
+https://a.espncdn.com/i/headshots/nba/players/full/4431714.png
+Jalen Wilson22	F	25	6' 6"	220 lbs	Kansas	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/5107173.png
+Danny Wolf2	F	21	6' 11"	250 lbs	Michigan	$2,801,280

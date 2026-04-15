@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4278129.png
+Deandre Ayton5	C	27	7' 0"	252 lbs	Arizona	$8,104,000
+https://a.espncdn.com/i/headshots/nba/players/full/3945274.png
+Luka Doncic77	G	27	6' 8"	230 lbs	--	$54,126,450
+https://a.espncdn.com/i/headshots/nba/players/full/4066648.png
+Rui Hachimura28	F	28	6' 8"	230 lbs	Gonzaga	$18,259,259
+https://a.espncdn.com/i/headshots/nba/players/full/4397077.png
+Jaxson Hayes11	C	25	7' 0"	220 lbs	Texas	$3,449,324
+https://a.espncdn.com/i/headshots/nba/players/full/4683774.png
+Bronny James9	G	21	6' 2"	210 lbs	USC	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/1966.png
+LeBron James23	F	41	6' 9"	250 lbs	--	$52,627,153
+https://a.espncdn.com/i/headshots/nba/players/full/3913174.png
+Luke Kennard10	G	29	6' 5"	206 lbs	Duke	$11,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/2960236.png
+Maxi Kleber14	F	34	6' 10"	240 lbs	--	$11,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4897943.png
+Dalton Knecht4	F	24	6' 6"	215 lbs	Tennessee	$4,010,160
+https://a.espncdn.com/i/headshots/nba/players/full/4592691.png
+Jake LaRavia12	F	24	6' 7"	235 lbs	Wake Forest	$6,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4702972.png
+Chris Manon30	G	24	6' 4"	209 lbs	Vanderbilt	--
+https://a.espncdn.com/i/headshots/nba/players/full/4066457.png
+Austin Reaves15	G	27	6' 5"	197 lbs	Oklahoma	$13,937,574
+https://a.espncdn.com/i/headshots/nba/players/full/2990992.png
+Marcus Smart36	G	32	6' 3"	220 lbs	Oklahoma State	$5,134,000
+https://a.espncdn.com/i/headshots/nba/players/full/4683686.png
+Nick Smith Jr.20	G	21	6' 2"	185 lbs	Arkansas	--
+https://a.espncdn.com/i/headshots/nba/players/full/5060631.png
+Adou Thiero1	F	21	6' 8"	220 lbs	Arkansas	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/4431695.png
+Drew Timme17	F	25	6' 10"	235 lbs	Gonzaga	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4278077.png
+Jarred Vanderbilt2	F	27	6' 8"	214 lbs	Kentucky	$11,571,429

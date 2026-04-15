@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/3135045.png
+Grayson Allen8	G	30	6' 3"	198 lbs	Duke	$16,875,000
+https://a.espncdn.com/i/headshots/nba/players/full/3136193.png
+Devin Booker1	G	29	6' 5"	206 lbs	Kentucky	$53,142,264
+https://a.espncdn.com/i/headshots/nba/players/full/4280245.png
+Jamaree Bouyea17	G	26	6' 2"	180 lbs	San Francisco	$574,210
+https://a.espncdn.com/i/headshots/nba/players/full/4591259.png
+Koby Brea14	G	23	6' 5"	215 lbs	Kentucky	--
+https://a.espncdn.com/i/headshots/nba/players/full/3155526.png
+Dillon Brooks3	F	30	6' 7"	225 lbs	Oregon	$22,124,110
+https://a.espncdn.com/i/headshots/nba/players/full/4066387.png
+Amir Coffey2	G	28	6' 7"	210 lbs	Minnesota	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4888725.png
+Ryan Dunn0	F	23	6' 7"	216 lbs	Virginia	$2,657,760
+https://a.espncdn.com/i/headshots/nba/players/full/5105977.png
+Rasheer Fleming20	F	21	6' 9"	240 lbs	Saint Joseph's	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/4278585.png
+Collin Gillespie12	G	26	6' 1"	195 lbs	Villanova	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4278402.png
+Jordan Goodwin23	G	27	6' 3"	215 lbs	Saint Louis	$2,349,578
+https://a.espncdn.com/i/headshots/nba/players/full/4437244.png
+Jalen Green4	G	24	6' 4"	186 lbs	--	$33,548,499
+https://a.espncdn.com/i/headshots/nba/players/full/4291678.png
+Haywood Highsmith7	F	29	6' 5"	220 lbs	Wheeling Jesuit	$827,984
+https://a.espncdn.com/i/headshots/nba/players/full/4702602.png
+CJ Huntley22	F	24	6' 9"	190 lbs	App State	--
+https://a.espncdn.com/i/headshots/nba/players/full/4601023.png
+Oso Ighodaro11	F	23	6' 11"	235 lbs	Marquette	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4277957.png
+Isaiah Livers18	F	27	6' 6"	232 lbs	Michigan	--
+https://a.espncdn.com/i/headshots/nba/players/full/5203685.png
+Khaman Maluach10	C	19	7' 1"	250 lbs	Duke	$6,016,080
+https://a.espncdn.com/i/headshots/nba/players/full/2583632.png
+Royce O'Neale00	F	32	6' 6"	226 lbs	Baylor	$10,125,000
+https://a.espncdn.com/i/headshots/nba/players/full/4701232.png
+Mark Williams15	C	24	7' 1"	240 lbs	Duke	$6,276,531

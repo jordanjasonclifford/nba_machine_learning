@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4684208.png
+Brooks Barnhizer23	F	24	6' 6"	230 lbs	Northwestern	--
+https://a.espncdn.com/i/headshots/nba/players/full/4592435.png
+Branden Carlson15	C	26	7' 0"	220 lbs	Utah	--
+https://a.espncdn.com/i/headshots/nba/players/full/2991350.png
+Alex Caruso9	G	32	6' 5"	186 lbs	Texas A&M	$18,102,000
+https://a.espncdn.com/i/headshots/nba/players/full/4397020.png
+Luguentz Dort5	G	26	6' 4"	220 lbs	Arizona State	$18,222,222
+https://a.espncdn.com/i/headshots/nba/players/full/4278073.png
+Shai Gilgeous-Alexander2	G	27	6' 6"	195 lbs	Kentucky	$38,333,050
+https://a.espncdn.com/i/headshots/nba/players/full/4222252.png
+Isaiah Hartenstein55	C	27	7' 0"	250 lbs	--	$28,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/4433255.png
+Chet Holmgren7	C	23	7' 1"	208 lbs	Gonzaga	$13,731,368
+https://a.espncdn.com/i/headshots/nba/players/full/4395702.png
+Isaiah Joe11	G	26	6' 4"	165 lbs	Arkansas	$12,362,338
+https://a.espncdn.com/i/headshots/nba/players/full/4683778.png
+Jared McCain3	G	22	6' 3"	195 lbs	Duke	$4,221,360
+https://a.espncdn.com/i/headshots/nba/players/full/4900671.png
+Ajay Mitchell25	G	23	6' 4"	190 lbs	UC Santa Barbara	$3,000,000
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Payton Sandfort14	F	23	6' 8"	215 lbs	Iowa	--
+https://a.espncdn.com/i/headshots/nba/players/full/5061603.png
+Thomas Sorber12	C	20	6' 9"	250 lbs	Georgetown	$4,655,040
+https://a.espncdn.com/i/headshots/nba/players/full/5159925.png
+Nikola Topic44	G	20	6' 6"	200 lbs	--	$5,182,920
+https://a.espncdn.com/i/headshots/nba/players/full/4683692.png
+Cason Wallace22	G	22	6' 3"	195 lbs	Kentucky	$5,820,240
+https://a.espncdn.com/i/headshots/nba/players/full/4397183.png
+Aaron Wiggins21	G	27	6' 5"	190 lbs	Maryland	$10,102,802
+https://a.espncdn.com/i/headshots/nba/players/full/4593803.png
+Jalen Williams8	G	24	6' 5"	211 lbs	Santa Clara	$6,580,997
+https://a.espncdn.com/i/headshots/nba/players/full/4432823.png
+Jaylin Williams6	F	23	6' 9"	240 lbs	Arkansas	$8,450,794
+https://a.espncdn.com/i/headshots/nba/players/full/3133626.png
+Kenrich Williams34	G	31	6' 7"	210 lbs	TCU	$7,163,000

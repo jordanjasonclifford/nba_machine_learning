@@ -1,0 +1,38 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4431752.png
+Kobe Brown24	G	26	6' 7"	250 lbs	Missouri	$2,654,880
+https://a.espncdn.com/i/headshots/nba/players/full/5157066.png
+Johnny Furphy12	G	21	6' 8"	200 lbs	Kansas	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4396993.png
+Tyrese Haliburton0	G	26	6' 5"	185 lbs	Iowa State	$45,550,512
+https://a.espncdn.com/i/headshots/nba/players/full/4065731.png
+Jay Huff32	C	28	7' 1"	240 lbs	Virginia	$2,349,578
+https://a.espncdn.com/i/headshots/nba/players/full/4592829.png
+Quenton Jackson29	G	27	6' 4"	173 lbs	Texas A&M	$601,553
+https://a.espncdn.com/i/headshots/nba/players/full/4697268.png
+Kam Jones7	G	24	6' 4"	200 lbs	Marquette	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/2530530.png
+T.J. McConnell9	G	34	6' 1"	190 lbs	Arizona	$10,200,000
+https://a.espncdn.com/i/headshots/nba/players/full/4395712.png
+Andrew Nembhard2	G	26	6' 4"	191 lbs	Gonzaga	$18,102,000
+https://a.espncdn.com/i/headshots/nba/players/full/4396909.png
+Aaron Nesmith23	G	26	6' 5"	215 lbs	Vanderbilt	$11,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4703421.png
+Taelon Peter4	G	24	6' 3"	185 lbs	Liberty	--
+https://a.espncdn.com/i/headshots/nba/players/full/4066399.png
+Micah Potter11	C	28	6' 9"	248 lbs	Wisconsin	$1,527,805
+https://a.espncdn.com/i/headshots/nba/players/full/4433076.png
+Ben Sheppard26	G	24	6' 6"	190 lbs	Belmont	$2,790,720
+https://a.espncdn.com/i/headshots/nba/players/full/3149673.png
+Pascal Siakam43	F	32	6' 8"	245 lbs	New Mexico State	$45,550,512
+https://a.espncdn.com/i/headshots/nba/players/full/4398207.png
+Jalen Slawson18	F	26	6' 7"	215 lbs	Furman	--
+https://a.espncdn.com/i/headshots/nba/players/full/4278516.png
+Ethan Thompson55	G	26	6' 5"	195 lbs	Oregon State	--
+https://a.espncdn.com/i/headshots/nba/players/full/4278355.png
+Obi Toppin1	F	28	6' 9"	220 lbs	Dayton	$14,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5106060.png
+Jarace Walker5	F	22	6' 7"	235 lbs	Houston	$6,665,520
+https://a.espncdn.com/i/headshots/nba/players/full/4017837.png
+Ivica Zubac40	C	29	7' 0"	240 lbs	--	$18,102,000
+Coach Rick Carlisle

@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4683021.png
+Deni Avdija8	F	25	6' 8"	228 lbs	--	$14,375,000
+https://a.espncdn.com/i/headshots/nba/players/full/4431736.png
+Toumani Camara33	F	25	6' 7"	230 lbs	Dayton	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/5081727.png
+Sidy Cissoko91	G	22	6' 6"	220 lbs	--	$688,243
+https://a.espncdn.com/i/headshots/nba/players/full/5105565.png
+Donovan Clingan23	C	22	7' 2"	280 lbs	UConn	$7,178,400
+https://a.espncdn.com/i/headshots/nba/players/full/2991070.png
+Jerami Grant9	F	32	6' 7"	213 lbs	Syracuse	$32,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5217746.png
+Yang Hansen16	C	20	7' 1"	270 lbs	--	$4,422,360
+https://a.espncdn.com/i/headshots/nba/players/full/4683678.png
+Scoot Henderson00	G	22	6' 3"	207 lbs	--	$10,748,040
+https://a.espncdn.com/i/headshots/nba/players/full/3995.png
+Jrue Holiday5	G	35	6' 4"	220 lbs	UCLA	$32,400,000
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Jayson Kent29	G	24	6' 8"	215 lbs	Texas	--
+https://a.espncdn.com/i/headshots/nba/players/full/4578893.png
+Vit Krejci27	G	25	6' 8"	195 lbs	--	$2,349,578
+https://a.espncdn.com/i/headshots/nba/players/full/6606.png
+Damian Lillard0	G	35	6' 2"	200 lbs	Weber State	$14,104,000
+https://a.espncdn.com/i/headshots/nba/players/full/4433144.png
+Caleb Love2	G	24	6' 3"	212 lbs	Arizona	--
+https://a.espncdn.com/i/headshots/nba/players/full/4594326.png
+Kris Murray24	F	25	6' 8"	218 lbs	Iowa	$3,132,000
+https://a.espncdn.com/i/headshots/nba/players/full/4914336.png
+Shaedon Sharpe17	G	22	6' 5"	210 lbs	Kentucky	$8,399,983
+https://a.espncdn.com/i/headshots/nba/players/full/3907498.png
+Matisse Thybulle4	G	29	6' 5"	202 lbs	Washington	$11,550,000
+https://a.espncdn.com/i/headshots/nba/players/full/4683935.png
+Blake Wesley1	G	23	6' 4"	190 lbs	Notre Dame	$4,726,328
+https://a.espncdn.com/i/headshots/nba/players/full/4066211.png
+Robert Williams III35	C	28	6' 9"	249 lbs	Texas A&M	$13,285,713
+https://a.espncdn.com/i/headshots/nba/players/full/4706557.png
+Chris Youngblood11	G	24	6' 4"	221 lbs	Alabama	--

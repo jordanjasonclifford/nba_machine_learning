@@ -1,0 +1,37 @@
+Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4395650.png
+Leaky Black12	F	26	6' 6"	209 lbs	North Carolina	--
+https://a.espncdn.com/i/headshots/nba/players/full/4845374.png
+Bub Carrington7	G	20	6' 4"	190 lbs	Pittsburgh	$4,677,600
+https://a.espncdn.com/i/headshots/nba/players/full/4432907.png
+Justin Champagnie9	F	24	6' 6"	206 lbs	Pittsburgh	$2,349,578
+https://a.espncdn.com/i/headshots/nba/players/full/4432173.png
+Sharife Cooper13	G	24	6' 0"	176 lbs	Auburn	--
+https://a.espncdn.com/i/headshots/nba/players/full/5104155.png
+Bilal Coulibaly0	G	21	6' 7"	195 lbs	--	$7,275,600
+https://a.espncdn.com/i/headshots/nba/players/full/6583.png
+Anthony Davis23	F	33	6' 10"	253 lbs	Kentucky	$54,126,450
+https://a.espncdn.com/i/headshots/nba/players/full/5174563.png
+Kyshawn George18	F	22	6' 8"	200 lbs	Miami	$2,966,760
+https://a.espncdn.com/i/headshots/nba/players/full/2581184.png
+Anthony Gill16	F	33	6' 7"	230 lbs	Virginia	$2,546,675
+https://a.espncdn.com/i/headshots/nba/players/full/4868423.png
+Jaden Hardy8	G	23	6' 3"	198 lbs	--	$6,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5238230.png
+Tre Johnson12	G	19	6' 5"	190 lbs	Texas	$8,237,640
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Julian Reese15	F	22	6' 9"	252 lbs	Maryland	--
+https://a.espncdn.com/i/headshots/nba/players/full/5144126.png
+Will Riley27	G	20	6' 9"	180 lbs	Illinois	$3,512,520
+https://a.espncdn.com/i/headshots/nba/players/full/3136776.png
+D'Angelo Russell5	G	30	6' 3"	193 lbs	Ohio State	$5,685,000
+https://a.espncdn.com/i/headshots/nba/players/full/5160992.png
+Alex Sarr20	C	20	7' 0"	205 lbs	--	$11,808,240
+https://a.espncdn.com/i/headshots/nba/players/full/4997537.png
+Tristan Vukcevic00	F	23	7' 0"	220 lbs	--	$2,857,143
+https://a.espncdn.com/i/headshots/nba/players/full/4606840.png
+Jamir Watkins5	G	24	6' 6"	210 lbs	Florida State	$1,131,970
+https://a.espncdn.com/i/headshots/nba/players/full/5105592.png
+Cam Whitmore1	F	21	6' 6"	230 lbs	Villanova	$3,539,760
+https://a.espncdn.com/i/headshots/nba/players/full/4277905.png
+Trae Young3	G	27	6' 2"	164 lbs	Oklahoma	$46,394,100

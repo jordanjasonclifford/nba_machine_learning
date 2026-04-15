@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4432166.png
+Cade Cunningham2	G	24	6' 6"	220 lbs	Oklahoma State	$46,394,100
+https://a.espncdn.com/i/headshots/nba/players/full/4433621.png
+Jalen Duren0	C	22	6' 10"	250 lbs	Memphis	$6,483,144
+https://a.espncdn.com/i/headshots/nba/players/full/2596112.png
+Javonte Green31	G	32	6' 5"	205 lbs	Radford	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/6440.png
+Tobias Harris12	F	33	6' 8"	226 lbs	Tennessee	$26,634,146
+https://a.espncdn.com/i/headshots/nba/players/full/4683771.png
+Ronald Holland II5	F	20	6' 8"	206 lbs	--	$8,657,280
+https://a.espncdn.com/i/headshots/nba/players/full/4066372.png
+Kevin Huerter27	G	27	6' 6"	198 lbs	Maryland	$17,991,071
+https://a.espncdn.com/i/headshots/nba/players/full/5107199.png
+Daniss Jenkins24	G	24	6' 4"	165 lbs	St. John's	$3,809,524
+https://a.espncdn.com/i/headshots/nba/players/full/5107818.png
+Isaac Jones3	C	26	6' 8"	245 lbs	Washington State	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4700852.png
+Chaz Lanier20	G	24	6' 3"	206 lbs	Tennessee	$1,372,870
+https://a.espncdn.com/i/headshots/nba/players/full/2991043.png
+Caris LeVert8	G	31	6' 7"	205 lbs	Michigan	$14,104,000
+https://a.espncdn.com/i/headshots/nba/players/full/4592187.png
+Wendell Moore Jr.14	F	24	6' 5"	215 lbs	Duke	--
+https://a.espncdn.com/i/headshots/nba/players/full/4278562.png
+Paul Reed7	F	26	6' 9"	210 lbs	DePaul	$5,335,894
+https://a.espncdn.com/i/headshots/nba/players/full/3157465.png
+Duncan Robinson55	F	31	6' 7"	215 lbs	Michigan	$16,834,692
+https://a.espncdn.com/i/headshots/nba/players/full/4432107.png
+Marcus Sasser25	G	25	6' 1"	195 lbs	Houston	$2,886,720
+https://a.espncdn.com/i/headshots/nba/players/full/4397882.png
+Tolu Smith35	F	25	6' 11"	250 lbs	Mississippi State	--
+https://a.espncdn.com/i/headshots/nba/players/full/4432810.png
+Isaiah Stewart28	F	24	6' 8"	250 lbs	Washington	$15,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4684742.png
+Ausar Thompson9	G	23	6' 7"	205 lbs	--	$8,775,000

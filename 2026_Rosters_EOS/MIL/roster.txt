@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/combiner/i?img=/i/headshots/nophoto.png&w=200&h=146
+Alex Antetokounmpo29	F	24	6' 8"	214 lbs	--	--
+https://a.espncdn.com/i/headshots/nba/players/full/3032977.png
+Giannis Antetokounmpo34	F	31	6' 11"	243 lbs	--	$54,126,450
+https://a.espncdn.com/i/headshots/nba/players/full/3102533.png
+Thanasis Antetokounmpo43	F	33	6' 7"	219 lbs	--	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4997526.png
+Ousmane Dieng21	F	22	6' 9"	185 lbs	--	$6,670,882
+https://a.espncdn.com/i/headshots/nba/players/full/4397475.png
+AJ Green20	G	26	6' 4"	190 lbs	Northern Iowa	$2,301,587
+https://a.espncdn.com/i/headshots/nba/players/full/2999547.png
+Gary Harris11	G	31	6' 4"	210 lbs	Michigan State	$3,634,153
+https://a.espncdn.com/i/headshots/nba/players/full/4432190.png
+Andre Jackson Jr.44	G	24	6' 6"	209 lbs	UConn	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/3134907.png
+Kyle Kuzma18	F	30	6' 8"	221 lbs	Utah	$21,810,605
+https://a.espncdn.com/i/headshots/nba/players/full/4397233.png
+Pete Nance35	F	26	6' 9"	225 lbs	North Carolina	--
+https://a.espncdn.com/i/headshots/nba/players/full/4397140.png
+Kevin Porter Jr.7	G	25	6' 5"	203 lbs	USC	$5,134,000
+https://a.espncdn.com/i/headshots/nba/players/full/3064482.png
+Bobby Portis9	F	31	6' 9"	250 lbs	Arkansas	$13,580,247
+https://a.espncdn.com/i/headshots/nba/players/full/2990962.png
+Taurean Prince12	F	32	6' 6"	218 lbs	Baylor	$3,303,774
+https://a.espncdn.com/i/headshots/nba/players/full/4591725.png
+Ryan Rollins13	G	23	6' 3"	180 lbs	Toledo	$4,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4397114.png
+Cormac Ryan30	G	27	6' 5"	195 lbs	North Carolina	--
+https://a.espncdn.com/i/headshots/nba/players/full/4277922.png
+Jericho Sims00	C	27	6' 10"	250 lbs	Texas	$2,461,463
+https://a.espncdn.com/i/headshots/nba/players/full/4277843.png
+Gary Trent Jr.5	G	27	6' 5"	204 lbs	Duke	$3,697,105
+https://a.espncdn.com/i/headshots/nba/players/full/3133628.png
+Myles Turner3	C	30	6' 11"	250 lbs	Texas	$25,318,251

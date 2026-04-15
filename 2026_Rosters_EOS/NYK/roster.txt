@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4277869.png
+Jose Alvarado5	G	28	6' 0"	179 lbs	Georgia Tech	$4,500,000
+https://a.espncdn.com/i/headshots/nba/players/full/3934719.png
+OG Anunoby8	F	28	6' 7"	240 lbs	Indiana	$39,568,966
+https://a.espncdn.com/i/headshots/nba/players/full/3147657.png
+Mikal Bridges25	G	29	6' 6"	209 lbs	Villanova	$24,900,000
+https://a.espncdn.com/i/headshots/nba/players/full/3934672.png
+Jalen Brunson11	G	29	6' 2"	190 lbs	Villanova	$34,944,001
+https://a.espncdn.com/i/headshots/nba/players/full/2528426.png
+Jordan Clarkson00	G	33	6' 5"	194 lbs	Missouri	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/5211983.png
+Pacome Dadiet4	F	20	6' 9"	210 lbs	--	$2,847,600
+https://a.espncdn.com/i/headshots/nba/players/full/5289900.png
+Mohamed Diawara51	F	20	6' 9"	225 lbs	--	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/3062679.png
+Josh Hart3	G	31	6' 5"	215 lbs	Villanova	$19,472,240
+https://a.espncdn.com/i/headshots/nba/players/full/4871141.png
+Ariel Hukporti55	C	24	7' 0"	246 lbs	--	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4395623.png
+Trey Jemison III50	F	26	6' 10"	270 lbs	UAB	--
+https://a.espncdn.com/i/headshots/nba/players/full/4702159.png
+Dillon Jones33	F	24	6' 5"	235 lbs	Weber State	$2,753,280
+https://a.espncdn.com/i/headshots/nba/players/full/4433225.png
+Tyler Kolek13	G	25	6' 2"	195 lbs	Marquette	$2,191,897
+https://a.espncdn.com/i/headshots/nba/players/full/4431823.png
+Miles McBride2	G	25	6' 2"	195 lbs	West Virginia	$4,333,333
+https://a.espncdn.com/i/headshots/nba/players/full/4411057.png
+Kevin McCullar Jr.9	G	25	6' 6"	210 lbs	Kansas	--
+https://a.espncdn.com/i/headshots/nba/players/full/4351852.png
+Mitchell Robinson23	C	28	7' 0"	240 lbs	--	$12,954,546
+https://a.espncdn.com/i/headshots/nba/players/full/3914044.png
+Landry Shamet44	G	29	6' 5"	190 lbs	Wichita State	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4610139.png
+Jeremy Sochan20	F	22	6' 8"	230 lbs	Baylor	$778,622
+https://a.espncdn.com/i/headshots/nba/players/full/3136195.png
+Karl-Anthony Towns32	C	30	7' 0"	248 lbs	Kentucky	$54,126,450

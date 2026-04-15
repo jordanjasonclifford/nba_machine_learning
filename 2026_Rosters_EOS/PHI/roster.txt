@@ -1,0 +1,35 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4870562.png
+Dominick Barlow25	F	22	6' 9"	215 lbs	--	$3,415,000
+https://a.espncdn.com/i/headshots/nba/players/full/4432179.png
+MarJon Beauchamp16	F	25	6' 7"	199 lbs	--	--
+https://a.espncdn.com/i/headshots/nba/players/full/5105637.png
+Adem Bona30	C	23	6' 10"	235 lbs	UCLA	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/4433569.png
+Johni Broome22	F	23	6' 10"	235 lbs	Auburn	$1,272,870
+https://a.espncdn.com/i/headshots/nba/players/full/6585.png
+Andre Drummond1	C	32	6' 11"	279 lbs	UConn	$5,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5124612.png
+VJ Edgecombe77	G	20	6' 4"	180 lbs	Baylor	$11,108,880
+https://a.espncdn.com/i/headshots/nba/players/full/4711297.png
+Justin Edwards11	F	22	6' 7"	203 lbs	Kentucky	$2,048,494
+https://a.espncdn.com/i/headshots/nba/players/full/3059318.png
+Joel Embiid21	C	32	7' 0"	280 lbs	Kansas	$55,224,526
+https://a.espncdn.com/i/headshots/nba/players/full/4251.png
+Paul George8	F	35	6' 8"	220 lbs	Fresno State	$51,666,090
+https://a.espncdn.com/i/headshots/nba/players/full/4397014.png
+Quentin Grimes5	G	25	6' 4"	210 lbs	Houston	$8,741,209
+https://a.espncdn.com/i/headshots/nba/players/full/3012.png
+Kyle Lowry7	G	40	6' 0"	196 lbs	Villanova	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4397179.png
+Tyrese Martin23	G	27	6' 6"	215 lbs	UConn	--
+https://a.espncdn.com/i/headshots/nba/players/full/4431678.png
+Tyrese Maxey0	G	25	6' 2"	200 lbs	Kentucky	$37,958,760
+https://a.espncdn.com/i/headshots/nba/players/full/3133603.png
+Kelly Oubre Jr.9	G	30	6' 8"	203 lbs	Kansas	$8,382,150
+https://a.espncdn.com/i/headshots/nba/players/full/4433159.png
+Dalen Terry14	F	23	6' 6"	195 lbs	Arizona	--
+https://a.espncdn.com/i/headshots/nba/players/full/4432446.png
+Jabari Walker33	F	23	6' 7"	237 lbs	Colorado	$724,598
+https://a.espncdn.com/i/headshots/nba/players/full/4431675.png
+Trendon Watford12	F	25	6' 8"	237 lbs	LSU	$2,461,463

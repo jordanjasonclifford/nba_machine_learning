@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4432816.png
+LaMelo Ball1	G	24	6' 7"	180 lbs	--	$37,958,760
+https://a.espncdn.com/i/headshots/nba/players/full/4066383.png
+Miles Bridges0	F	28	6' 7"	225 lbs	Michigan State	$25,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/2578239.png
+Pat Connaughton21	G	33	6' 5"	209 lbs	Notre Dame	$1,315,814
+https://a.espncdn.com/i/headshots/nba/players/full/4433249.png
+Moussa Diabate14	F	24	6' 10"	210 lbs	Michigan	$2,270,735
+https://a.espncdn.com/i/headshots/nba/players/full/4597865.png
+Tosan Evbuomwan20	F	25	6' 8"	217 lbs	Princeton	--
+https://a.espncdn.com/i/headshots/nba/players/full/4432811.png
+Josh Green10	G	25	6' 6"	200 lbs	Arizona	$13,666,667
+https://a.espncdn.com/i/headshots/nba/players/full/4701225.png
+PJ Hall16	C	24	6' 8"	245 lbs	Clemson	--
+https://a.espncdn.com/i/headshots/nba/players/full/4602025.png
+Sion James4	G	23	6' 5"	220 lbs	Duke	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4576060.png
+Ryan Kalkbrenner11	C	24	7' 1"	256 lbs	Creighton	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/5061575.png
+Kon Knueppel7	G	20	6' 6"	215 lbs	Duke	$10,015,680
+https://a.espncdn.com/i/headshots/nba/players/full/4432819.png
+Tre Mann23	G	25	6' 4"	178 lbs	Florida	$8,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/5239590.png
+Liam McNeeley33	G	20	6' 7"	210 lbs	UConn	$2,763,960
+https://a.espncdn.com/i/headshots/nba/players/full/4433287.png
+Brandon Miller24	F	23	6' 7"	200 lbs	Alabama	$11,968,800
+https://a.espncdn.com/i/headshots/nba/players/full/4592686.png
+Antonio Reeves12	G	25	6' 5"	205 lbs	Kentucky	$1,955,377
+https://a.espncdn.com/i/headshots/nba/players/full/5211176.png
+Tidjane Salaun31	F	20	6' 10"	207 lbs	--	$7,863,240
+https://a.espncdn.com/i/headshots/nba/players/full/4277964.png
+Xavier Tillman26	F	27	6' 8"	245 lbs	Michigan State	$2,546,675
+https://a.espncdn.com/i/headshots/nba/players/full/4395651.png
+Coby White3	G	26	6' 4"	195 lbs	North Carolina	$12,888,889
+https://a.espncdn.com/i/headshots/nba/players/full/4066218.png
+Grant Williams2	F	27	6' 7"	236 lbs	Tennessee	$13,645,500

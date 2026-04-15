@@ -1,0 +1,37 @@
+	Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/2993874.png
+Kyle Anderson12	F	32	6' 8"	230 lbs	UCLA	$567,470
+https://a.espncdn.com/i/headshots/nba/players/full/5279133.png
+Joan Beringer19	F	19	6' 11"	230 lbs	--	$4,201,080
+https://a.espncdn.com/i/headshots/nba/players/full/4432247.png
+Jaylen Clark22	G	24	6' 5"	205 lbs	UCLA	$2,191,897
+https://a.espncdn.com/i/headshots/nba/players/full/3195.png
+Mike Conley10	G	38	6' 1"	175 lbs	Ohio State	$725,834
+https://a.espncdn.com/i/headshots/nba/players/full/3934673.png
+Donte DiVincenzo0	G	29	6' 4"	203 lbs	Villanova	$11,990,000
+https://a.espncdn.com/i/headshots/nba/players/full/4397002.png
+Ayo Dosunmu13	G	26	6' 4"	200 lbs	Illinois	$7,518,519
+https://a.espncdn.com/i/headshots/nba/players/full/4594268.png
+Anthony Edwards5	G	24	6' 4"	225 lbs	Georgia	$45,550,512
+https://a.espncdn.com/i/headshots/nba/players/full/4592699.png
+Enrique Freeman25	F	25	6' 9"	220 lbs	Akron	--
+https://a.espncdn.com/i/headshots/nba/players/full/3032976.png
+Rudy Gobert27	C	33	7' 1"	258 lbs	--	$35,000,000
+https://a.espncdn.com/i/headshots/nba/players/full/4592492.png
+Bones Hyland8	G	25	6' 2"	169 lbs	VCU	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/2968436.png
+Joe Ingles7	F	38	6' 8"	220 lbs	--	$2,296,274
+https://a.espncdn.com/i/headshots/nba/players/full/4431671.png
+Jaden McDaniels3	F	25	6' 9"	185 lbs	Washington	$24,858,622
+https://a.espncdn.com/i/headshots/nba/players/full/5105553.png
+Julian Phillips4	F	22	6' 6"	198 lbs	Tennessee	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/4592979.png
+Zyon Pullin15	G	25	6' 4"	206 lbs	Florida	--
+https://a.espncdn.com/i/headshots/nba/players/full/3064514.png
+Julius Randle30	F	31	6' 9"	250 lbs	Kentucky	$30,864,198
+https://a.espncdn.com/i/headshots/nba/players/full/4396971.png
+Naz Reid11	C	26	6' 9"	264 lbs	LSU	$21,551,724
+https://a.espncdn.com/i/headshots/nba/players/full/4432847.png
+Terrence Shannon Jr.1	G	25	6' 6"	215 lbs	Illinois	$2,674,080
+https://a.espncdn.com/i/headshots/nba/players/full/5157587.png
+Rocco Zikarsky44	C	19	7' 3"	227 lbs	--	--
