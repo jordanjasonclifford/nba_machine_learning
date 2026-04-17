@@ -14,6 +14,7 @@ import os
 import re
 import time
 import random
+import webbrowser
 import pandas as pd
 
 from nba_api.stats.static import players as nba_players
@@ -24,10 +25,9 @@ BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
 ROSTER_DIR  = os.path.join(BASE_DIR, "2026_Rosters_EOS")
 UNMATCHED   = os.path.join(BASE_DIR, "unmatched_players.txt")
 
-# ---------- season range ----------
+# ---------- season range----------
 MIN_YEAR = 2015   # 2015-16
 MAX_YEAR = 2025   # 2025-26
-
 # ---------- rate limiting (mirrors extract_player.py) ----------
 BASE_SLEEP      = 4.0
 JITTER          = 0.6
@@ -220,50 +220,15 @@ def output_path(player_name: str, team: str) -> str:
 #  Main
 # ------------------------------------------------------------------ #
 
-def main():
-    os.makedirs(ROSTER_DIR, exist_ok=True)
-
-    # --- discover available teams ---
-    available = sorted(
-        t for t in os.listdir(ROSTER_DIR)
-        if os.path.isfile(os.path.join(ROSTER_DIR, t, "roster.txt"))
-    )
-
-    print("Available teams:")
-    for idx, t in enumerate(available, 1):
-        print(f"  {idx:2}. {t}")
-    print()
-
-    raw = input("Enter team abbreviation (e.g. ATL) or number: ").strip().upper()
-
-    if raw.isdigit():
-        choice = int(raw)
-        if not (1 <= choice <= len(available)):
-            print(f"Invalid number. Pick 1-{len(available)}.")
-            return
-        selected_team = available[choice - 1]
-    elif raw in available:
-        selected_team = raw
-    else:
-        print(f"'{raw}' not found. Valid teams: {', '.join(available)}")
-        return
-
-    print(f"\nRunning: {selected_team}\n")
-
-    # --- load only the selected team's roster ---
+def run_team(selected_team: str, unmatched: list, failed: list) -> None:
     roster_path = os.path.join(ROSTER_DIR, selected_team, "roster.txt")
     names = parse_roster(roster_path)
-    print(f"{selected_team}: {len(names)} players\n")
+    print(f"\n{selected_team}: {len(names)} players")
 
-    # display_name -> team (single team, no dedup needed)
     player_teams: dict[str, str] = {n: selected_team for n in names}
-
     total = len(player_teams)
-    unmatched = []
-    failed    = []
 
     for i, (name, team) in enumerate(player_teams.items(), 1):
-        # --- skip check #1: roster display name ---
         out = output_path(name, team)
         if os.path.exists(out):
             print(f"[{i}/{total}] skip  {name}  (CSV exists)")
@@ -282,16 +247,12 @@ def main():
             full_name = info["full_name"]
             print(f"  -> {full_name}  (ID {pid})")
 
-            # --- skip check #2: canonical nba_api name (catches manual extractions) ---
             out_canonical = output_path(full_name, team)
             if os.path.exists(out_canonical):
                 print(f"  skip  (CSV already exists as canonical name)")
                 continue
 
             seasons = get_active_seasons()
-            if not seasons:
-                print(f"  [skip] no qualifying seasons for {full_name}")
-                continue
             print(f"  seasons: {seasons}")
 
             df = extract_player(pid, full_name, seasons)
@@ -305,10 +266,52 @@ def main():
         except Exception as e:
             print(f"  [error] {name}: {e}")
             failed.append(f"{team}\t{name}\t{e}")
-            continue
+
+    print(f"--- {selected_team} done ---")
+
+
+def main():
+    os.makedirs(ROSTER_DIR, exist_ok=True)
+
+    # --- discover available teams ---
+    available = sorted(
+        t for t in os.listdir(ROSTER_DIR)
+        if os.path.isfile(os.path.join(ROSTER_DIR, t, "roster.txt"))
+    )
+
+    print("Available teams:")
+    for idx, t in enumerate(available, 1):
+        print(f"  {idx:2}. {t}")
+    print(f"  {len(available) + 1:2}. ALL  (run every team)")
+    print()
+
+    raw = input("Enter team abbreviation, number, or ALL: ").strip().upper()
+
+    run_all = raw in ("ALL", str(len(available) + 1))
+
+    if run_all:
+        teams_to_run = available
+    elif raw.isdigit():
+        choice = int(raw)
+        if not (1 <= choice <= len(available)):
+            print(f"Invalid number. Pick 1-{len(available)} or {len(available) + 1} for ALL.")
+            return
+        teams_to_run = [available[choice - 1]]
+    elif raw in available:
+        teams_to_run = [raw]
+    else:
+        print(f"'{raw}' not found. Valid teams: {', '.join(available)}")
+        return
+
+    unmatched = []
+    failed    = []
+
+    for team in teams_to_run:
+        run_team(team, unmatched, failed)
 
     # --- summary ---
-    print(f"\n--- {selected_team} done ---")
+    print(f"\n=== All done ({len(teams_to_run)} team(s)) ===")
+
     if unmatched:
         with open(UNMATCHED, "a", encoding="utf-8") as f:
             for line in unmatched:
@@ -324,6 +327,9 @@ def main():
 
     if not unmatched and not failed:
         print("All players extracted successfully.")
+
+    import webbrowser
+    webbrowser.open("https://www.youtube.com/watch?v=sjQQNV82Mqc&list=RDsjQQNV82Mqc&start_radio=1")
 
 
 if __name__ == "__main__":

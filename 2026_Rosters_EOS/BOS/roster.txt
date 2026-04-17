@@ -1,0 +1,33 @@
+Name	POS	Age	HT	WT	College	Salary
+https://a.espncdn.com/i/headshots/nba/players/full/4397885.png
+Dalano Banton45	F	26	6' 8"	203 lbs	Nebraska	--
+https://a.espncdn.com/i/headshots/nba/players/full/3917376.png
+Jaylen Brown7	G	29	6' 6"	223 lbs	California	$53,142,264
+https://a.espncdn.com/i/headshots/nba/players/full/4277951.png
+Luka Garza52	C	27	6' 10"	243 lbs	Iowa	$2,461,463
+https://a.espncdn.com/i/headshots/nba/players/full/5175647.png
+Hugo Gonzalez28	G	20	6' 6"	200 lbs	--	$2,783,880
+https://a.espncdn.com/i/headshots/nba/players/full/4397251.png
+Ron Harper Jr.13	G	26	6' 5"	233 lbs	Rutgers	--
+https://a.espncdn.com/i/headshots/nba/players/full/4065804.png
+Sam Hauser30	F	28	6' 7"	217 lbs	Virginia	$10,044,643
+https://a.espncdn.com/i/headshots/nba/players/full/4066354.png
+Payton Pritchard11	G	28	6' 1"	195 lbs	Oregon	$7,232,143
+https://a.espncdn.com/i/headshots/nba/players/full/4397424.png
+Neemias Queta88	C	26	7' 0"	248 lbs	Utah State	$2,349,578
+https://a.espncdn.com/i/headshots/nba/players/full/4593841.png
+Baylor Scheierman55	G	25	6' 6"	205 lbs	Creighton	$2,619,000
+https://a.espncdn.com/i/headshots/nba/players/full/4701992.png
+Max Shulga44	G	23	6' 4"	210 lbs	VCU	--
+https://a.espncdn.com/i/headshots/nba/players/full/4065648.png
+Jayson Tatum0	F	28	6' 8"	210 lbs	Duke	$54,126,450
+https://a.espncdn.com/i/headshots/nba/players/full/4593043.png
+John Tonje8	G	24	6' 4"	218 lbs	Wisconsin	--
+https://a.espncdn.com/i/headshots/nba/players/full/6478.png
+Nikola Vucevic4	C	35	6' 9"	260 lbs	USC	$21,481,481
+https://a.espncdn.com/i/headshots/nba/players/full/4683689.png
+Jordan Walsh27	G	22	6' 6"	205 lbs	Arkansas	$2,221,677
+https://a.espncdn.com/i/headshots/nba/players/full/3078576.png
+Derrick White9	G	31	6' 4"	190 lbs	Colorado	$28,100,001
+https://a.espncdn.com/i/headshots/nba/players/full/4702745.png
+Amari Williams77	F	24	6' 11"	250 lbs	Kentucky	$490,128
