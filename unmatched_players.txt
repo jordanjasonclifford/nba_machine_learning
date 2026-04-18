@@ -32,3 +32,5 @@ MEM	Adama Bal
 MEM	Jahmai Mashack
 MEM	Toby Okani
 MEM	Lucas Williamson
+OKC	Payton Sandfort
+OKC	Nikola Topic
