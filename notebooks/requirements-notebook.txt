@@ -1,0 +1,4 @@
+ipykernel
+joblib
+notebook
+scikit-learn

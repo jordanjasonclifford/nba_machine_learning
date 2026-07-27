@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NBA Game Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="site-header">
+        <div>
+          <p class="eyebrow">Courtside Analytics</p>
+          <h1>{% if active_tab == 'playoffs' %}The Road to the Finals{% else %}Game Simulator{% endif %}</h1>
+        </div>
+        <nav class="tabs">
+          <a class="tab {% if active_tab == 'game' %}active{% endif %}" href="/">Single Game</a>
+          <a class="tab {% if active_tab == 'playoffs' %}active{% endif %}" href="/?tab=playoffs">Playoffs</a>
+        </nav>
+      </header>
+
+      {% if active_tab == 'game' %}
+      <section class="control-panel">
+        <form method="post" class="controls">
+          <label class="team-control" style="--team-color: {{ team_theme[selected_away]['primary'] }}; --team-accent: {{ team_theme[selected_away]['secondary'] }};">
+            <span class="label-row"><span class="swatch"></span>Away</span>
+            <select name="away_team">
+              {% for team in teams %}
+                <option value="{{ team }}" {% if team == selected_away %}selected{% endif %}>{{ team }}</option>
+              {% endfor %}
+            </select>
+          </label>
+
+          <label class="team-control" style="--team-color: {{ team_theme[selected_home]['primary'] }}; --team-accent: {{ team_theme[selected_home]['secondary'] }};">
+            <span class="label-row"><span class="swatch"></span>Home</span>
+            <select name="home_team">
+              {% for team in teams %}
+                <option value="{{ team }}" {% if team == selected_home %}selected{% endif %}>{{ team }}</option>
+              {% endfor %}
+            </select>
+          </label>
+
+          <button type="submit">Simulate Game</button>
+
+          <details class="debug-panel pregame-debug">
+            <summary>Debug</summary>
+            <p class="debug-copy">
+              Leave this blank for a random game. Enter a seed only when you want to reproduce or inspect a specific simulation.
+            </p>
+            <label>
+              Manual seed
+              <input name="debug_seed" value="{{ debug_seed_value }}" inputmode="numeric" placeholder="optional">
+            </label>
+          </details>
+        </form>
+      </section>
+      {% else %}
+      <section class="control-panel playoff-control">
+        <form method="post" class="controls playoff-controls">
+          <input type="hidden" name="tab" value="playoffs">
+          <button type="submit">Simulate Playoffs</button>
+          <details class="debug-panel pregame-debug">
+            <summary>Debug</summary>
+            <p class="debug-copy">
+              Leave this blank for a fresh bracket. Enter a seed to replay the same entire playoff simulation.
+            </p>
+            <label>
+              Playoff seed
+              <input name="playoff_seed" value="" inputmode="numeric" placeholder="optional">
+            </label>
+          </details>
+        </form>
+      </section>
+      {% endif %}
+
+      {% if error %}
+        <section class="alert">{{ error }}</section>
+      {% endif %}
+
+      {% if active_tab == 'playoffs' %}
+        {% if playoff_result and playoff_summary %}
+          <section class="postseason-summary">
+            <div>
+              <span>Projected champion</span>
+              <strong>{{ playoff_summary.champion }}</strong>
+            </div>
+            <div>
+              <span>Biggest upset</span>
+              <strong>{{ playoff_summary.biggest_upset.label }}</strong>
+              <small>{{ playoff_summary.biggest_upset.score }}</small>
+            </div>
+            <div>
+              <span>Closest series</span>
+              <strong>{{ playoff_summary.closest.label }}</strong>
+              <small>{{ playoff_summary.closest.score }}</small>
+            </div>
+          </section>
+        {% endif %}
+
+        <section class="standings-grid">
+          {% for conference in ['West', 'East'] %}
+            <div class="standings-card">
+              <h2>{{ conference }} Seeds</h2>
+              <div class="seed-list">
+                {% for row in standings[conference] %}
+                  <div class="seed-row" style="--team-color: {{ team_theme[row.team]['primary'] }}; --team-accent: {{ team_theme[row.team]['secondary'] }};">
+                    <span class="seed-number">{{ row.seed }}</span>
+                    <span class="mini-swatch"></span>
+                    <strong>{{ row.team }}</strong>
+                    <span>{{ row.wins }}-{{ row.losses }}</span>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </section>
+
+        {% if playoff_result %}
+          <section class="champion-card" style="--team-color: {{ team_theme[playoff_result.champion]['primary'] }}; --team-accent: {{ team_theme[playoff_result.champion]['secondary'] }};">
+            <span>NBA Champion</span>
+            <strong>{{ playoff_result.champion }}</strong>
+            <small>Season {{ playoff_result.season }}</small>
+          </section>
+
+          <details class="debug-panel result-debug">
+            <summary>Debug</summary>
+            <p class="debug-copy">
+              This playoff run used seed <strong>{{ playoff_result.seed }}</strong>. Reusing that number will reproduce the same play-in games, series results, and champion.
+            </p>
+            <form method="post" class="debug-form">
+              <input type="hidden" name="tab" value="playoffs">
+              <label>
+                Replay or test playoff seed
+                <input name="playoff_seed" value="{{ playoff_result.seed }}" inputmode="numeric">
+              </label>
+              <button type="submit">Run Seed</button>
+            </form>
+          </details>
+
+          <section class="path-control">
+            <form method="post">
+              <input type="hidden" name="tab" value="playoffs">
+              <input type="hidden" name="playoff_seed" value="{{ playoff_result.seed }}">
+              <label>
+                Highlight team path
+                <select name="highlight_team" onchange="this.form.submit()">
+                  <option value="">None</option>
+                  {% for team in playoff_teams %}
+                    <option value="{{ team }}" {% if selected_path_team == team %}selected{% endif %}>{{ team }}</option>
+                  {% endfor %}
+                </select>
+              </label>
+            </form>
+          </section>
+
+          <section class="playoff-section">
+            <h2>Play-In</h2>
+            <div class="playin-grid">
+              {% for conference in ['West', 'East'] %}
+                <div class="round-card">
+                  <h3>{{ conference }}</h3>
+                  {% for game in playoff_result.play_in[conference] %}
+                    <div class="playin-game">
+                      <span>{{ game.label }}</span>
+                      <strong>{{ game.away }} {{ game.away_score }} @ {{ game.home }} {{ game.home_score }}</strong>
+                      <em>{{ game.winner }} advances{% if game.overtime_periods %} · {{ game.overtime_periods }} OT{% endif %}</em>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endfor %}
+            </div>
+          </section>
+
+          <section class="playoff-section">
+            <h2>Bracket Results</h2>
+            <div class="bracket-board">
+              {% for conference in ['West', 'East'] %}
+                <section class="conference-bracket {{ conference|lower }}-bracket">
+                  <h3>{{ conference }}</h3>
+                  <div class="conference-rounds">
+                    {% set round_keys = ['finals', 'semifinals', 'first_round'] if conference == 'East' else ['first_round', 'semifinals', 'finals'] %}
+                    {% for key in round_keys %}
+                      {% set round = playoff_result.bracket[conference][key] %}
+                      <div class="round-card">
+                        <h4>{{ round.name.replace(conference ~ ' ', '') }}</h4>
+                    {% for series in round.series %}
+                          {% set path_hit = selected_path_team and (selected_path_team == series.team_a or selected_path_team == series.team_b) %}
+                          <details class="series-card {% if selected_path_team and not path_hit %}dimmed{% endif %} {% if path_hit %}path-hit{% endif %}">
+                            <summary>
+                              <span>{{ series.team_a }} vs {{ series.team_b }}</span>
+                              <strong><b>{{ series.winner }}</b> wins {{ series.winner_wins }}-{{ series.loser_wins }}</strong>
+                            </summary>
+                            <div class="series-meta">Home court: {{ series.home_court }}</div>
+                            {% for game in series.games %}
+                              <div class="series-game">
+                                <span>G{{ game.number }}</span>
+                                <span>{{ game.away }} {{ game.away_score }} @ {{ game.home }} {{ game.home_score }}</span>
+                                <strong>{{ game.winner }}</strong>
+                                {% if game.overtime_periods %}
+                                  <em>{{ game.overtime_periods }} OT</em>
+                                {% endif %}
+                              </div>
+                            {% endfor %}
+                          </details>
+                        {% endfor %}
+                      </div>
+                    {% endfor %}
+                  </div>
+                </section>
+              {% endfor %}
+
+              <section class="nba-finals-bracket">
+                {% set round = playoff_result.bracket['NBA']['finals'] %}
+                <div class="round-card finals-card">
+                  <h4>{{ round.name }}</h4>
+                  {% for series in round.series %}
+                    {% set path_hit = selected_path_team and (selected_path_team == series.team_a or selected_path_team == series.team_b) %}
+                    <details class="series-card {% if selected_path_team and not path_hit %}dimmed{% endif %} {% if path_hit %}path-hit{% endif %}" open>
+                      <summary>
+                        <span>{{ series.team_a }} vs {{ series.team_b }}</span>
+                        <strong><b>{{ series.winner }}</b> wins {{ series.winner_wins }}-{{ series.loser_wins }}</strong>
+                      </summary>
+                      <div class="series-meta">Home court: {{ series.home_court }}</div>
+                      {% for game in series.games %}
+                        <div class="series-game">
+                          <span>G{{ game.number }}</span>
+                          <span>{{ game.away }} {{ game.away_score }} @ {{ game.home }} {{ game.home_score }}</span>
+                          <strong>{{ game.winner }}</strong>
+                          {% if game.overtime_periods %}
+                            <em>{{ game.overtime_periods }} OT</em>
+                          {% endif %}
+                        </div>
+                      {% endfor %}
+                    </details>
+                  {% endfor %}
+                </div>
+              </section>
+            </div>
+          </section>
+        {% else %}
+          <section class="empty-state">
+            Simulate the full 2025-26 postseason from the generated standings and play-in field.
+          </section>
+        {% endif %}
+      {% endif %}
+
+      {% if active_tab == 'game' %}
+      {% if result %}
+        <section class="matchup-hero" style="--away-color: {{ team_theme[result.away_team]['primary'] }}; --away-accent: {{ team_theme[result.away_team]['secondary'] }}; --home-color: {{ team_theme[result.home_team]['primary'] }}; --home-accent: {{ team_theme[result.home_team]['secondary'] }};">
+          <div class="hero-team away-score">
+            <div class="team-logo">{{ result.away_team }}</div>
+            <span>{{ prediction.away.name }}</span>
+            <small>{{ prediction.away.record.wins }}-{{ prediction.away.record.losses }}</small>
+          </div>
+          <div class="score-center">
+            <div class="winner-badge">{{ prediction.winner }} projected winner</div>
+            <div class="score-line">
+              <strong>{{ result.score[result.away_team] }}</strong>
+              <span>@</span>
+              <strong>{{ result.score[result.home_team] }}</strong>
+            </div>
+            <div class="meta">
+              Season {{ result.season }} | Neutral projection | Model confidence: {{ prediction.confidence }}
+              {% if result.overtime_periods %}| {{ result.overtime_periods }} OT{% endif %}
+            </div>
+            <div class="probability-bar" aria-label="Win probability">
+              <span class="away-prob" style="width: {{ prediction.away_prob }}%">{{ prediction.away_prob }}%</span>
+              <span class="home-prob" style="width: {{ prediction.home_prob }}%">{{ prediction.home_prob }}%</span>
+            </div>
+          </div>
+          <div class="hero-team home">
+            <div class="team-logo">{{ result.home_team }}</div>
+            <span>{{ prediction.home.name }}</span>
+            <small>{{ prediction.home.record.wins }}-{{ prediction.home.record.losses }}</small>
+          </div>
+        </section>
+
+        <section class="why-panel">
+          <h2>Why this prediction?</h2>
+          <p>{{ prediction.summary }}</p>
+        </section>
+
+        <details class="debug-panel result-debug">
+          <summary>Debug</summary>
+          <p class="debug-copy">
+            This game used seed <strong>{{ result.seed }}</strong>. Reusing that number will reproduce the same final score, play-by-play, and box score.
+          </p>
+          <form method="post" class="debug-form">
+            <input type="hidden" name="away_team" value="{{ selected_away }}">
+            <input type="hidden" name="home_team" value="{{ selected_home }}">
+            <label>
+              Replay or test seed
+              <input name="debug_seed" value="{{ result.seed }}" inputmode="numeric">
+            </label>
+            <button type="submit">Run Seed</button>
+          </form>
+        </details>
+
+        <section class="comparison-section">
+          <h2>Matchup Comparison</h2>
+          <div class="comparison-rows">
+            {% for row in comparison_rows %}
+              <div class="comparison-row" tabindex="0" title="{{ row.tooltip }}">
+                <span>{{ row.label }}</span>
+                <strong>{{ row.away_value }}</strong>
+                <div class="comparison-bars">
+                  <i style="width: {{ row.away_pct }}%"></i>
+                  <b style="width: {{ row.home_pct }}%"></b>
+                </div>
+                <strong>{{ row.home_value }}</strong>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="play-feed">
+            <h2>Play-By-Play</h2>
+            <div class="feed-list">
+              {% for event in result.feed %}
+                <div class="feed-row" {% if event.team in team_theme %}style="--event-color: {{ team_theme[event.team]['primary'] }}; --event-accent: {{ team_theme[event.team]['secondary'] }};"{% endif %}>
+                  <span class="clock">{{ event.clock }}</span>
+                  <span class="team-tag">{{ event.team }}</span>
+                  <span>{{ event.text }}</span>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="box-scores">
+            {% for team in [result.away_team, result.home_team] %}
+              <h2 class="team-heading" style="--team-color: {{ team_theme[team]['primary'] }}; --team-accent: {{ team_theme[team]['secondary'] }};">
+                <span class="heading-swatch"></span>{{ team }} Box Score
+              </h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Player</th>
+                      <th>MIN</th>
+                      <th>PTS</th>
+                      <th>REB</th>
+                      <th>AST</th>
+                      <th>FG</th>
+                      <th>3PT</th>
+                      <th>FT</th>
+                      <th>OREB</th>
+                      <th>TOV</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for row in result.box_score if row.TEAM == team %}
+                      <tr>
+                        <td>{{ row.PLAYER }}</td>
+                        <td>{{ "%.1f"|format(row.MIN) }}</td>
+                        <td>{{ row.PTS }}</td>
+                        <td>{{ row.REB }}</td>
+                        <td>{{ row.AST }}</td>
+                        <td>{{ row.FG }}</td>
+                        <td>{{ row.FG3 }}</td>
+                        <td>{{ row.FT }}</td>
+                        <td>{{ row.OREB }}</td>
+                        <td>{{ row.TOV }}</td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+      {% else %}
+        <section class="empty-state">
+          Pick two teams and simulate a single game.
+        </section>
+      {% endif %}
+      {% endif %}
+    </main>
+  </body>
+</html>
