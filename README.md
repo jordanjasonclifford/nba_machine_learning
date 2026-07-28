@@ -33,6 +33,8 @@ This project assumes the 2025-26 season and uses the warehouse CSVs in this repo
 
 At a high level, the project focuses on players who are officially on the team roster by the end of the 2025-26 season. That means it may not include players who appeared during the season but did not end on the final roster.
 
+Player roles in the simulator are based on observed 2025-26 season participation, not ideal full-strength rotations. The player event weights use games played, total minutes, average minutes, and box-score event shares to approximate who was actually available and involved during the season. As a result, a star player who missed most of the season may receive a smaller simulated role than their real talent level would suggest, because the simulator is reflecting the season data rather than overriding it with live injury or manual availability assumptions.
+
 ## Run Locally
 
 ### Streamlit App
