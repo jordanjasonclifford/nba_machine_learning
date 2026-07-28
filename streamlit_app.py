@@ -207,8 +207,7 @@ def playoffs_tab(playoff_simulator: PlayoffSimulator) -> None:
 
 def main() -> None:
     st.set_page_config(page_title="NBA Game Simulator", page_icon="basketball", layout="wide")
-    st.caption("Courtside Modeling")
-    st.title("Game Simulator")
+    st.title("Courtside Modeling")
 
     simulator, playoff_simulator = load_simulators()
     game, playoffs = st.tabs(["Game Simulator", "The Road to the Finals"])
