@@ -35,6 +35,21 @@ At a high level, the project focuses on players who are officially on the team r
 
 ## Run Locally
 
+### Streamlit App
+
+For the shareable browser app:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+streamlit run streamlit_app.py
+```
+
+Then open the local Streamlit URL shown in the terminal. This version includes both the single-game simulator and playoff simulator.
+
+To make it public without requiring anyone to download the project, deploy `streamlit_app.py` from this repo on Streamlit Community Cloud and use `requirements.txt` for dependencies.
+
+### Flask App
+
 From the project root:
 
 ```powershell

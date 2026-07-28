@@ -53,6 +53,12 @@ PLAY_IN_SEED_OVERRIDES = {
     }
 }
 
+HOME_COURT_OVERRIDES = {
+    DEFAULT_SEASON: {
+        frozenset(("ORL", "PHI")): "PHI",
+    }
+}
+
 
 @dataclass
 class PlayoffResult:
@@ -112,6 +118,9 @@ class PlayoffSimulator:
 
     @staticmethod
     def _home_court(team_a: str, team_b: str, wins: dict[str, int]) -> str:
+        override = HOME_COURT_OVERRIDES.get(DEFAULT_SEASON, {}).get(frozenset((team_a, team_b)))
+        if override:
+            return override
         if wins.get(team_a, 0) > wins.get(team_b, 0):
             return team_a
         if wins.get(team_b, 0) > wins.get(team_a, 0):
