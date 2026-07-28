@@ -335,7 +335,7 @@ def playoffs_tab(playoff_simulator: PlayoffSimulator) -> None:
 
 def main() -> None:
     """Configure the Streamlit page and route users between game/playoff tabs."""
-    st.set_page_config(page_title="NBA Game Simulator", page_icon="basketball", layout="wide")
+    st.set_page_config(page_title="Courtside Modeling", page_icon="🏀", layout="wide")
     st.title("Courtside Modeling")
 
     simulator, playoff_simulator = load_simulators()

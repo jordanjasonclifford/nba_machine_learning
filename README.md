@@ -1,20 +1,16 @@
-# NBA ML Game Simulator
+# Courtside Modeling: NBA Machine Learning Simulator
 
-You thought you'd get a normal README!
+This repository contains the machine learning and simulation layer of my NBA analytics project.
 
-But it was me, Collin Gillespie!
+For the data warehouse, ETL pipeline, and Power BI reporting side of the project, start here:
 
-<img src="images/collinballin.jpeg" alt="Collin Gillespie" width="420">
+[jordanjasonclifford/nba_data_engineering](https://github.com/jordanjasonclifford/nba_data_engineering)
 
 ## Project Overview
 
-This repository is the machine learning and simulation layer of my NBA project. It uses cleaned warehouse CSVs to power a game predictor, player box-score simulation, play-by-play style game flow, overtime handling, and a playoff simulator.
+Courtside Modeling uses cleaned warehouse CSVs to power an interactive basketball prediction product. It includes a single-game simulator, player box-score simulation, play-by-play style game flow, overtime handling, and a playoff simulator.
 
-The goal of this project is to add an ML-focused piece to the broader NBA portfolio project, especially for resume depth: data engineering builds the warehouse, and this repo turns that data into an interactive basketball prediction product.
-
-For more on the data engineering side, including the pipeline and warehouse work behind the CSVs, see:
-
-[jordanjasonclifford/nba_data_engineering](https://github.com/jordanjasonclifford/nba_data_engineering)
+The broader project is split into two portfolio pieces: the data engineering repository builds the warehouse and Power BI reporting layer, while this repository turns that modeled data into a machine learning and simulation application.
 
 ## What This App Does
 
@@ -36,6 +32,21 @@ At a high level, the project focuses on players who are officially on the team r
 Player roles in the simulator are based on observed 2025-26 season participation, not ideal full-strength rotations. The player event weights use games played, total minutes, average minutes, and box-score event shares to approximate who was actually available and involved during the season. As a result, a star player who missed most of the season may receive a smaller simulated role than their real talent level would suggest, because the simulator is reflecting the season data rather than overriding it with live injury or manual availability assumptions.
 
 ## Run Locally
+
+From a fresh clone, create and activate a virtual environment, then install the project dependencies:
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+On macOS or Linux, activate the environment with:
+
+```bash
+source venv/bin/activate
+```
 
 ### Streamlit App
 
