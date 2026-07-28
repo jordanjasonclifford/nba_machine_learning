@@ -10,6 +10,9 @@ from app.simulator import DEFAULT_SEASON, GameSimulator
 
 
 app = Flask(__name__)
+
+# Instantiate the simulators at process startup so CSVs/model artifacts are read
+# once and reused across requests. This keeps the demo responsive after launch.
 simulator = GameSimulator()
 playoff_simulator = PlayoffSimulator(simulator)
 
@@ -82,6 +85,7 @@ TEAM_NAMES = {
 
 @app.after_request
 def add_no_cache_headers(response):
+    """Prevent stale CSS/template output while iterating on the local Flask demo."""
     response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
     response.headers["Pragma"] = "no-cache"
     response.headers["Expires"] = "0"
@@ -89,6 +93,7 @@ def add_no_cache_headers(response):
 
 
 def _regular_season_rows():
+    """Return one row per team-game for the default regular season."""
     rows = simulator.team[
         (simulator.team["SEASON"] == DEFAULT_SEASON)
         & (simulator.team["SEASON_TYPE"] == "Regular Season")
@@ -97,6 +102,7 @@ def _regular_season_rows():
 
 
 def team_records():
+    """Compute current win/loss records for UI labels."""
     regular = _regular_season_rows()
     grouped = regular.groupby("TEAM_ABBREVIATION")
     return {
@@ -109,10 +115,18 @@ def team_records():
 
 
 def team_profiles():
+    """Build small recent-form summaries for the comparison panel.
+
+    These are display features only. The simulated game itself is produced by
+    `GameSimulator`; this function simply gives the UI readable team context.
+    """
     regular = _regular_season_rows().sort_values("GAME_DATE")
     records = team_records()
     profiles = {}
     for team, group in regular.groupby("TEAM_ABBREVIATION"):
+        # Last 10 games gives a compact "recent form" snapshot for users choosing
+        # a matchup. It is intentionally separate from the simulator's last-25
+        # team profile, which is used for game generation.
         recent = group.tail(10)
         fga = max(float(recent["FGA"].sum()), 1.0)
         possessions = max(float((recent["FGA"] + 0.44 * recent["FTA"] + recent["TOV"]).sum()), 1.0)
@@ -131,6 +145,7 @@ def team_profiles():
 
 
 def prediction_view_model(result):
+    """Convert a raw `SimulationResult` into template-friendly summary values."""
     if not result:
         return None
     profiles = team_profiles()
@@ -139,6 +154,9 @@ def prediction_view_model(result):
     away_score = result.score[away]
     home_score = result.score[home]
     margin = home_score - away_score
+
+    # This is a display confidence from simulated margin, not the Random Forest
+    # model's calibrated win probability. Clamp it so the UI avoids 0/100 claims.
     home_prob = round(100 / (1 + exp(-margin / 8)))
     home_prob = max(8, min(92, home_prob))
     away_prob = 100 - home_prob
@@ -159,6 +177,7 @@ def prediction_view_model(result):
 
 
 def comparison_rows(away_team, home_team):
+    """Prepare side-by-side matchup rows for the Flask template."""
     profiles = team_profiles()
     away = profiles.get(away_team, {})
     home = profiles.get(home_team, {})
@@ -174,6 +193,9 @@ def comparison_rows(away_team, home_team):
     for label, tip, key, direction in rows:
         away_value = away.get(key, 0)
         home_value = home.get(key, 0)
+
+        # Convert each stat to a 0-100 bar relative to the two selected teams.
+        # This keeps the comparison visual even when metrics have different units.
         low = min(float(away_value), float(home_value), 0)
         high = max(float(away_value), float(home_value), 1)
         span = high - low or 1
@@ -207,6 +229,7 @@ def comparison_rows(away_team, home_team):
 
 
 def playoff_summary(playoff_result):
+    """Extract headline playoff outcomes for the top summary strip."""
     if not playoff_result:
         return None
     biggest_upset = None
@@ -216,6 +239,8 @@ def playoff_summary(playoff_result):
             winner_wins = int(series["winner_wins"])
             loser_wins = int(series["loser_wins"])
             spread = winner_wins - loser_wins
+
+            # "Closest" means smallest series-win margin, e.g. 4-3 beats 4-2.
             if closest is None or spread < closest["spread"]:
                 closest = {"label": f"{series['winner']} over {series['loser']}", "score": f"{winner_wins}-{loser_wins}", "spread": spread}
             if biggest_upset is None and series["winner"] != series["home_court"]:
@@ -228,6 +253,7 @@ def playoff_summary(playoff_result):
 
 
 def playoff_team_options(standings):
+    """Return all play-in/playoff teams available for path highlighting."""
     return [
         row["team"]
         for conference in ("West", "East")
@@ -237,6 +263,7 @@ def playoff_team_options(standings):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    """Render the main Flask app and handle game/playoff simulation requests."""
     active_tab = request.form.get("tab", request.args.get("tab", "game"))
     default_home = "PHX" if "PHX" in simulator.teams else simulator.teams[0]
     default_away = "DEN" if "DEN" in simulator.teams else simulator.teams[1]
@@ -252,10 +279,14 @@ def index():
     if request.method == "POST":
         try:
             if active_tab == "playoffs":
+                # A provided seed makes the entire bracket reproducible. Without
+                # one, each POST generates a new randomized postseason.
                 playoff_seed_value = request.form.get("playoff_seed", "").strip()
                 playoff_seed = int(playoff_seed_value) if playoff_seed_value else random.randint(1, 999_999)
                 playoff_result = playoff_simulator.simulate_playoffs(seed=playoff_seed)
             else:
+                # Same idea for a single game: a seed reproduces the final score,
+                # play-by-play feed, and box score exactly.
                 seed = int(debug_seed_value) if debug_seed_value else random.randint(1, 999_999)
                 result = simulator.simulate_game(selected_home, selected_away, seed=seed)
         except Exception as exc:
@@ -264,6 +295,7 @@ def index():
     standings = playoff_simulator.standings()
     playoff_teams = playoff_team_options(standings)
     if selected_path_team not in playoff_teams:
+        # Guard against stale query params or teams outside the generated field.
         selected_path_team = ""
 
     return render_template(

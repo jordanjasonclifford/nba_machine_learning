@@ -1,3 +1,9 @@
+"""Prototype extractor for Phoenix Suns game logs.
+
+This single-team version is useful for testing nba_api calls before running the
+all-team extractor in `games/all_games.py`.
+"""
+
 import os
 import time
 import pandas as pd
@@ -19,6 +25,7 @@ def season_str(year_start: int) -> str:
     return f"{year_start}-{str(year_start + 1)[-2:]}"
 
 def get_team_id_by_abbr(abbr: str) -> int:
+    """Resolve an NBA team abbreviation to the numeric nba_api team id."""
     team_list = teams.get_teams()
     match = next((t for t in team_list if t["abbreviation"] == abbr.upper()), None)
     if not match:
@@ -29,6 +36,7 @@ def fetch_team_games(team_id: int, season: str, season_type: str) -> pd.DataFram
     """
     season_type: 'Regular Season' or 'Playoffs'
     """
+    # LeagueGameFinder returns one row per game for the requested team/season.
     finder = leaguegamefinder.LeagueGameFinder(
         team_id_nullable=team_id,
         season_nullable=season,
@@ -49,13 +57,13 @@ def main():
         season = season_str(y)
         print(f"\nPulling Suns games for {season}...")
 
-        # Regular Season
+        # Pull regular season and playoffs separately so later warehouse code can
+        # keep SEASON_TYPE as a filter.
         reg_df = fetch_team_games(team_id, season, "Regular Season")
         all_dfs.append(reg_df)
         print(f"  Regular Season games: {len(reg_df)}")
         time.sleep(SLEEP_SECONDS)
 
-        # Playoffs
         po_df = fetch_team_games(team_id, season, "Playoffs")
         all_dfs.append(po_df)
         print(f"  Playoffs games: {len(po_df)}")

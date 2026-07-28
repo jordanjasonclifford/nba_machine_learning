@@ -38,6 +38,7 @@ MAX_TRIES       = 3
 _req_count = 0
 
 def _rate_limit():
+    """Throttle requests so long roster extraction is less likely to be blocked."""
     global _req_count
     _req_count += 1
     time.sleep(BASE_SLEEP + random.random() * JITTER)
@@ -93,6 +94,7 @@ def parse_roster(filepath: str) -> list[str]:
 _player_cache: list[dict] | None = None
 
 def _all_players() -> list[dict]:
+    """Cache the static NBA player list for repeated name lookups."""
     global _player_cache
     if _player_cache is None:
         _player_cache = nba_players.get_players()
@@ -160,6 +162,7 @@ SEASON_TYPES = ["Regular Season", "Playoffs"]
 
 
 def fetch_season(player_id: int | str, season: str, season_type: str) -> pd.DataFrame:
+    """Fetch one player's gamelog for a season/type with retry backoff."""
     delay = 2
     for attempt in range(1, MAX_TRIES + 1):
         try:
@@ -180,6 +183,7 @@ def fetch_season(player_id: int | str, season: str, season_type: str) -> pd.Data
 
 
 def extract_player(player_id: int | str, player_name: str, seasons: list[str]) -> pd.DataFrame:
+    """Collect all requested season/type gamelogs for one player."""
     frames = []
     for season in seasons:
         for season_type in SEASON_TYPES:
@@ -212,6 +216,7 @@ def extract_player(player_id: int | str, player_name: str, seasons: list[str]) -
 # ------------------------------------------------------------------ #
 
 def output_path(player_name: str, team: str) -> str:
+    """Create the canonical CSV path for one player's extracted gamelogs."""
     safe = re.sub(r"[^a-z0-9_]", "", player_name.lower().replace(" ", "_"))
     return os.path.join(ROSTER_DIR, team, f"{safe}_gamelogs_2015_2026.csv")
 
@@ -221,6 +226,7 @@ def output_path(player_name: str, team: str) -> str:
 # ------------------------------------------------------------------ #
 
 def run_team(selected_team: str, unmatched: list, failed: list) -> None:
+    """Extract gamelogs for every player listed in one team roster file."""
     roster_path = os.path.join(ROSTER_DIR, selected_team, "roster.txt")
     names = parse_roster(roster_path)
     print(f"\n{selected_team}: {len(names)} players")
@@ -271,6 +277,7 @@ def run_team(selected_team: str, unmatched: list, failed: list) -> None:
 
 
 def main():
+    """Prompt for a team/all-teams selection and run roster extraction."""
     os.makedirs(ROSTER_DIR, exist_ok=True)
 
     # --- discover available teams ---

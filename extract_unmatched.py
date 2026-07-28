@@ -40,6 +40,7 @@ MAX_TRIES      = 3
 _req_count = 0
 
 def _rate_limit():
+    """Throttle nba_api requests while resolving/fetching unmatched players."""
     global _req_count
     _req_count += 1
     time.sleep(BASE_SLEEP + random.random() * JITTER)
@@ -53,12 +54,14 @@ def _rate_limit():
 # ------------------------------------------------------------------ #
 
 def clean_name(raw: str) -> str:
+    """Remove roster artifacts that prevent direct player-name matching."""
     name = re.sub(r"\*+", "", raw)           # remove *****
     name = re.sub(r"\b20\d{2}\b", "", name)  # remove draft year e.g. 2025
     name = re.sub(r"\d+$", "", name)         # remove jersey number
     return name.strip()
 
 def strip_accents(s: str) -> str:
+    """Normalize names so accented and unaccented spellings can match."""
     return "".join(
         c for c in unicodedata.normalize("NFKD", s)
         if not unicodedata.combining(c)
@@ -73,12 +76,14 @@ _static_pool = None
 _common_pool = None
 
 def _get_static_pool():
+    """Load the cached nba_api static player list."""
     global _static_pool
     if _static_pool is None:
         _static_pool = nba_players.get_players()
     return _static_pool
 
 def _get_common_pool():
+    """Load current-season players, which can include newer names/rookies."""
     global _common_pool
     if _common_pool is None:
         print("  [lookup] fetching CommonAllPlayers (current season)...")
@@ -96,6 +101,7 @@ def _get_common_pool():
     return _common_pool
 
 def _search_pool(pool: list, name: str) -> dict | None:
+    """Search one player pool using exact, accent-stripped, and fuzzy rules."""
     lower         = name.lower()
     lower_stripped = strip_accents(lower)
     parts         = lower_stripped.split()
@@ -127,6 +133,7 @@ def _search_pool(pool: list, name: str) -> dict | None:
     return None
 
 def find_player(name: str) -> dict | None:
+    """Resolve a name through the static list, then current-season fallback."""
     # 1. try static list
     result = _search_pool(_get_static_pool(), name)
     if result:
@@ -141,6 +148,7 @@ def find_player(name: str) -> dict | None:
 # ------------------------------------------------------------------ #
 
 def fetch_season(player_id, season: str, season_type: str) -> pd.DataFrame:
+    """Fetch one player-season gamelog with retries."""
     delay = 2
     for attempt in range(1, MAX_TRIES + 1):
         try:
@@ -162,6 +170,7 @@ def fetch_season(player_id, season: str, season_type: str) -> pd.DataFrame:
             delay *= 3
 
 def extract_player(player_id, player_name: str) -> pd.DataFrame:
+    """Fetch all configured seasons/types for one resolved player."""
     frames = []
     for season in SEASONS:
         for season_type in SEASON_TYPES:
@@ -186,6 +195,7 @@ def extract_player(player_id, player_name: str) -> pd.DataFrame:
     return combined
 
 def output_path(player_name: str, team: str) -> str:
+    """Create the roster-folder CSV path for one player."""
     safe = re.sub(r"[^a-z0-9_]", "", player_name.lower().replace(" ", "_"))
     return os.path.join(ROSTER_DIR, team, f"{safe}_gamelogs_2015_2026.csv")
 
@@ -195,6 +205,7 @@ def output_path(player_name: str, team: str) -> str:
 # ------------------------------------------------------------------ #
 
 def main():
+    """Retry unresolved roster names and rewrite the unmatched list."""
     if not os.path.exists(UNMATCHED):
         print("unmatched_players.txt not found.")
         return

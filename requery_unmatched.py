@@ -25,6 +25,7 @@ from batch_extract_rosters import (
 # ------------------------------------------------------------------ #
 
 def clean_name(raw: str) -> str:
+    """Remove roster artifacts that make player names fail lookup."""
     name = re.sub(r"\*+", "", raw)          # remove *****
     name = re.sub(r"\b20\d{2}\b", "", name) # remove draft year e.g. 2025
     name = re.sub(r"\d+$", "", name)        # remove jersey number
@@ -32,6 +33,7 @@ def clean_name(raw: str) -> str:
 
 
 def strip_accents(s: str) -> str:
+    """Normalize accented characters before comparing player names."""
     return "".join(
         c for c in unicodedata.normalize("NFKD", s)
         if not unicodedata.combining(c)
@@ -43,6 +45,7 @@ def strip_accents(s: str) -> str:
 # ------------------------------------------------------------------ #
 
 def find_player(name: str):
+    """Resolve a player name with exact, accent-stripped, and fuzzy matching."""
     pool  = _all_players()
     lower = name.lower()
     lower_stripped = strip_accents(lower)
@@ -89,6 +92,7 @@ def find_player(name: str):
 # ------------------------------------------------------------------ #
 
 def main():
+    """Retry all names in `unmatched_players.txt` using improved matching."""
     if not os.path.exists(UNMATCHED):
         print("unmatched_players.txt not found.")
         return

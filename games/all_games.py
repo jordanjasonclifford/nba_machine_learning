@@ -1,3 +1,10 @@
+"""Extract historical team game logs for every NBA team.
+
+This script is the first step for the team-level side of the project. It pulls
+regular-season and playoff rows from nba_api, writes one CSV per team, and those
+CSV files are later stacked into `warehouse/fact_team_game.csv`.
+"""
+
 import os
 import time
 import random
@@ -42,6 +49,8 @@ def fetch_team_games(team_id: int, season: str, season_type: str) -> pd.DataFram
 
     for attempt in range(1, MAX_TRIES + 1):
         try:
+            # LeagueGameFinder returns team-level game logs. These rows become the
+            # rolling team features used by the winner/score model notebooks.
             finder = leaguegamefinder.LeagueGameFinder(
                 team_id_nullable=team_id,
                 season_nullable=season,
@@ -95,7 +104,8 @@ def main():
             season = season_str(y)
             print(f"Pulling {team_abbr} {season}")
 
-            # Regular Season
+            # Pull regular season and playoffs separately so the warehouse can
+            # preserve the season type as a modeling/filtering column.
             reg_df = fetch_team_games(team_id, season, "Regular Season")
             if not reg_df.empty:
                 reg_df["TEAM_ABBR"] = team_abbr
@@ -109,7 +119,6 @@ def main():
             total_requests += 1
             sleepy()
 
-            # Playoffs
             po_df = fetch_team_games(team_id, season, "Playoffs")
             if not po_df.empty:
                 po_df["TEAM_ABBR"] = team_abbr
@@ -123,7 +132,7 @@ def main():
             total_requests += 1
             sleepy()
 
-            # checkpoint cooldown
+            # Periodic cooldowns reduce the chance of nba_api/NBA Stats throttling.
             if total_requests % COOLDOWN_EVERY == 0:
                 print(f"Cooldown... ({COOLDOWN_SECONDS}s)")
                 time.sleep(COOLDOWN_SECONDS)

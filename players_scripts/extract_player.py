@@ -1,3 +1,10 @@
+"""Extract one player's historical gamelogs.
+
+This script is a single-player prototype. The larger roster extraction scripts
+generalize the same idea across every team roster, but this file is handy when
+testing nba_api behavior or pulling one specific player manually.
+"""
+
 import os
 import time
 import random
@@ -30,15 +37,17 @@ SEASONS = [
 ]
 
 def get_player_name(player_id: str) -> str:
-    # quick lookup from nba_api static list
+    """Resolve a player id to a readable name for logs and filenames."""
     plist = players.get_players()
     match = next((p for p in plist if str(p["id"]) == str(player_id)), None)
     return match["full_name"] if match else f"Unknown ({player_id})"
 
 def sleepy():
+    """Pause between requests so manual extraction is less likely to be throttled."""
     time.sleep(BASE_SLEEP + random.random() * JITTER)
 
 def fetch_with_retries(player_id: str, season: str, max_tries: int = MAX_TRIES) -> pd.DataFrame:
+    """Fetch one regular-season gamelog with simple exponential backoff."""
     delay = 2
     for attempt in range(1, max_tries + 1):
         try:
@@ -54,12 +63,13 @@ def fetch_with_retries(player_id: str, season: str, max_tries: int = MAX_TRIES) 
             delay *= 3  # 2s -> 6s -> 18s
 
 def main():
+    """Pull all configured seasons for `PLAYER_ID` and write one CSV."""
     os.makedirs(OUT_DIR, exist_ok=True)
 
     player_name = get_player_name(PLAYER_ID)
     print(f"Player: {player_name} (ID={PLAYER_ID})")
 
-    # change the naming convention of output for it to be easier to identify the player from the filename
+    # Use the player's name in the output filename so the CSV is easier to audit.
     player_name = get_player_name(PLAYER_ID)
     safe_name = player_name.replace(" ", "_").lower()
     OUT_FILE = f"{safe_name}_gamelogs_2015_2026.csv"
@@ -76,9 +86,8 @@ def main():
         if df is None or df.empty:
             print("  (no games found)")
         else:
-            # *** Keep all endpoint columns + add SEASON column
+            # Keep all endpoint columns, then add project-specific tracking fields.
             df["SEASON"] = season
-            # Add easy tracking columns
             df["PLAYER_ID"] = str(PLAYER_ID)
             df["PLAYER_NAME"] = player_name
             all_dfs.append(df)

@@ -1,3 +1,9 @@
+"""Print a quick row-count audit of extracted player game logs.
+
+This is a lightweight sanity check before rebuilding `warehouse/fact_player_game.csv`.
+It reports how many player CSVs and rows exist per team folder.
+"""
+
 import os
 import pandas as pd
 

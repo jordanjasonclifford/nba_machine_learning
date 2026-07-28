@@ -1,3 +1,9 @@
+"""Normalize game CSV date strings.
+
+This utility rewrites every `to_games_csvs/*.csv` file so `GAME_DATE` uses a
+consistent month/day/year display format, then sorts each team file by date.
+"""
+
 import os
 import pandas as pd
 

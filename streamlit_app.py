@@ -46,11 +46,18 @@ TEAM_NAMES = {
 
 @st.cache_resource(show_spinner="Loading NBA simulation data...")
 def load_simulators() -> tuple[GameSimulator, PlayoffSimulator]:
+    """Load simulation engines once per Streamlit session.
+
+    `GameSimulator` reads warehouse CSVs and player weights from disk. Caching the
+    objects avoids reloading those files every time a widget interaction reruns
+    the Streamlit script.
+    """
     game_simulator = GameSimulator()
     return game_simulator, PlayoffSimulator(game_simulator)
 
 
 def regular_season_rows(simulator: GameSimulator) -> pd.DataFrame:
+    """Return one row per team-game for the default regular season."""
     rows = simulator.team[
         (simulator.team["SEASON"] == DEFAULT_SEASON)
         & (simulator.team["SEASON_TYPE"] == "Regular Season")
@@ -60,6 +67,7 @@ def regular_season_rows(simulator: GameSimulator) -> pd.DataFrame:
 
 @st.cache_data(show_spinner=False)
 def team_records(team_rows: pd.DataFrame) -> dict[str, dict[str, int]]:
+    """Create win/loss records used in score cards."""
     grouped = team_rows.groupby("TEAM_ABBREVIATION")
     return {
         team: {
@@ -71,10 +79,16 @@ def team_records(team_rows: pd.DataFrame) -> dict[str, dict[str, int]]:
 
 
 def winner_from_result(result: SimulationResult) -> str:
+    """Identify the simulated winner from the final score dictionary."""
     return result.home_team if result.score[result.home_team] > result.score[result.away_team] else result.away_team
 
 
 def win_probability(result: SimulationResult) -> tuple[int, int]:
+    """Convert simulated margin into a display-only probability.
+
+    This is not the Random Forest model's calibrated probability. It is a simple
+    sigmoid transform that makes the UI easier to read after a simulation.
+    """
     margin = result.score[result.home_team] - result.score[result.away_team]
     home_prob = round(100 / (1 + exp(-margin / 8)))
     home_prob = max(8, min(92, home_prob))
@@ -82,6 +96,7 @@ def win_probability(result: SimulationResult) -> tuple[int, int]:
 
 
 def display_game_result(result: SimulationResult, records: dict[str, dict[str, int]]) -> None:
+    """Render final score, confidence, player box score, and play-by-play."""
     away = result.away_team
     home = result.home_team
     winner = winner_from_result(result)
@@ -106,6 +121,8 @@ def display_game_result(result: SimulationResult, records: dict[str, dict[str, i
         seed_note += f" | {result.overtime_periods} OT"
     st.caption(seed_note)
 
+    # `GameSimulator` returns ordinary dictionaries/lists so both Flask and
+    # Streamlit can render the same simulation result without adapter classes.
     box_score = pd.DataFrame(result.box_score)
     feed = pd.DataFrame(result.feed)
     box_tab, feed_tab = st.tabs(["Box Score", "Play-By-Play"])
@@ -119,6 +136,7 @@ def display_game_result(result: SimulationResult, records: dict[str, dict[str, i
 
 
 def display_standings(standings: dict[str, list[dict[str, object]]]) -> None:
+    """Show the generated top-ten seed table for each conference."""
     cols = st.columns(2)
     for col, conference in zip(cols, ["West", "East"], strict=True):
         with col:
@@ -127,6 +145,7 @@ def display_standings(standings: dict[str, list[dict[str, object]]]) -> None:
 
 
 def display_playoff_result(playoff_result) -> None:
+    """Render play-in games, series results, and champion."""
     st.subheader(f"Projected NBA Champion: {playoff_result.champion}")
     st.caption(f"Season {playoff_result.season} | Seed {playoff_result.seed}")
 
@@ -151,6 +170,7 @@ def display_playoff_result(playoff_result) -> None:
 
 
 def game_tab(simulator: GameSimulator) -> None:
+    """Interactive single-game simulation tab."""
     records = team_records(regular_season_rows(simulator))
     default_home = "PHX" if "PHX" in simulator.teams else simulator.teams[0]
     default_away = "DEN" if "DEN" in simulator.teams else simulator.teams[1]
@@ -166,6 +186,8 @@ def game_tab(simulator: GameSimulator) -> None:
     st.caption("Seed is optional. Use the same seed to replay the exact same game result, play-by-play, and box score.")
 
     if st.button("Simulate Game", type="primary", use_container_width=True):
+        # Seeds are optional but useful for debugging and sharing. The same seed
+        # reproduces the same score, play-by-play, and player box score.
         seed = int(manual_seed) if use_manual_seed else random.randint(1, 999_999)
         try:
             result = simulator.simulate_game(selected_home, selected_away, seed=seed)
@@ -182,6 +204,7 @@ def game_tab(simulator: GameSimulator) -> None:
 
 
 def playoffs_tab(playoff_simulator: PlayoffSimulator) -> None:
+    """Interactive full-postseason simulation tab."""
     standings = playoff_simulator.standings()
     display_standings(standings)
 
@@ -190,6 +213,8 @@ def playoffs_tab(playoff_simulator: PlayoffSimulator) -> None:
     st.caption("Seed is optional. Use the same seed to replay the exact same play-in games, series results, and champion.")
 
     if st.button("Simulate Playoffs", type="primary", use_container_width=True):
+        # One seed controls every play-in game and best-of-seven series, making a
+        # full bracket reproducible for demos or screenshots.
         seed = int(manual_seed) if use_manual_seed else random.randint(1, 999_999)
         try:
             playoff_result = playoff_simulator.simulate_playoffs(seed=seed)
@@ -206,6 +231,7 @@ def playoffs_tab(playoff_simulator: PlayoffSimulator) -> None:
 
 
 def main() -> None:
+    """Configure the Streamlit page and route users between game/playoff tabs."""
     st.set_page_config(page_title="NBA Game Simulator", page_icon="basketball", layout="wide")
     st.title("Courtside Modeling")
 

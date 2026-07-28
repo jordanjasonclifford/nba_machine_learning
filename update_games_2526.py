@@ -29,9 +29,11 @@ TIMEOUT        = 60
 # ----------------------------
 
 def sleepy():
+    """Pause between API calls to reduce throttling risk."""
     time.sleep(random.uniform(SLEEP_MIN, SLEEP_MAX))
 
 def fetch_team_games(team_id: int, season_type: str) -> pd.DataFrame:
+    """Fetch the configured season for one team and season type."""
     delay = 0.8
     for attempt in range(1, MAX_TRIES + 1):
         try:
@@ -59,6 +61,7 @@ def fetch_team_games(team_id: int, season_type: str) -> pd.DataFrame:
             return pd.DataFrame()
 
 def main():
+    """Refresh each existing team CSV with the latest configured season rows."""
     team_list     = teams.get_teams()
     total_requests = 0
 
