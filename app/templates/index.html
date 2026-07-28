@@ -138,7 +138,7 @@
           </details>
 
           <section class="path-control">
-            <form method="post">
+            <form method="get">
               <input type="hidden" name="tab" value="playoffs">
               <input type="hidden" name="playoff_seed" value="{{ playoff_result.seed }}">
               <label>
@@ -275,11 +275,6 @@
           </div>
         </section>
 
-        <section class="why-panel">
-          <h2>Why this prediction?</h2>
-          <p>{{ prediction.summary }}</p>
-        </section>
-
         <details class="debug-panel result-debug">
           <summary>Debug</summary>
           <p class="debug-copy">
@@ -349,8 +344,8 @@
                     </tr>
                   </thead>
                   <tbody>
-                    {% for row in result.box_score if row.TEAM == team %}
-                      <tr>
+                    {% for row in box_scores[team] %}
+                      <tr class="heat-row" style="--team-color: {{ team_theme[team]['primary'] }}; --row-heat-full: {{ row.HEAT_FULL }}; --row-heat-mid: {{ row.HEAT_MID }}; --row-heat-alt: {{ row.HEAT_ALT }}; --row-heat-hover: {{ row.HEAT_HOVER }}; --row-heat-hover-mid: {{ row.HEAT_HOVER_MID }};">
                         <td>{{ row.PLAYER }}</td>
                         <td>{{ "%.1f"|format(row.MIN) }}</td>
                         <td>{{ row.PTS }}</td>

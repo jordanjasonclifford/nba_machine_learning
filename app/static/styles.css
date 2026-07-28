@@ -570,16 +570,38 @@ th {
   text-transform: uppercase;
 }
 
-tbody tr:nth-child(odd) {
-  background: #fbfaf7;
+.box-scores tbody tr {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--team-color, var(--accent)) var(--row-heat-full, 0%), white) 0%,
+      color-mix(in srgb, var(--team-color, var(--accent)) var(--row-heat-mid, 0%), #fbfaf7) 52%,
+      #fffdf8 100%
+    );
 }
 
-tbody tr:first-child {
-  background: var(--accent-soft);
+.box-scores tbody tr:nth-child(odd) {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--team-color, var(--accent)) var(--row-heat-full, 0%), white) 0%,
+      color-mix(in srgb, var(--team-color, var(--accent)) var(--row-heat-alt, 0%), #fbfaf7) 52%,
+      #fbfaf7 100%
+    );
 }
 
-tbody tr:hover {
-  background: var(--viz-soft);
+.box-scores tbody tr.heat-row td:first-child {
+  box-shadow: inset 4px 0 0 color-mix(in srgb, var(--team-color, var(--accent)) var(--row-heat-full, 0%), transparent);
+}
+
+.box-scores tbody tr:hover {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--team-color, var(--accent)) var(--row-heat-hover, 10%), white) 0%,
+      color-mix(in srgb, var(--team-color, var(--accent)) var(--row-heat-hover-mid, 0%), var(--viz-soft)) 56%,
+      var(--viz-soft) 100%
+    );
 }
 
 .postseason-summary {

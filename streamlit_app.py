@@ -1,7 +1,13 @@
 from __future__ import annotations
 
+import os
 import random
 from math import exp
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+os.environ.setdefault("MPLCONFIGDIR", str(ROOT / ".matplotlib"))
+(ROOT / ".matplotlib").mkdir(exist_ok=True)
 
 import pandas as pd
 import streamlit as st
@@ -95,8 +101,106 @@ def win_probability(result: SimulationResult) -> tuple[int, int]:
     return 100 - home_prob, home_prob
 
 
+def record_indicator(record: dict[str, int]) -> tuple[str, str, str]:
+    """Return winning percentage text, arrow, and color class."""
+    wins = int(record.get("wins", 0))
+    losses = int(record.get("losses", 0))
+    games = wins + losses
+    percentage = wins / games if games else 0
+    pct_text = f"{percentage:.3f}".replace("0.", ".")
+    if wins < 41:
+        return f"{pct_text} ({wins}-{losses})", "down", "record-bad"
+    elif wins == 41:
+        return f"{pct_text} ({wins}-{losses})", "flat", "record-even"
+    return f"{pct_text} ({wins}-{losses})", "up", "record-good"
+
+
+def box_score_display_frame(box_score: pd.DataFrame, team: str) -> pd.DataFrame:
+    """Return a display-only box score with all values left-aligned by Streamlit."""
+    team_box = box_score[box_score["TEAM"] == team].drop(columns=["TEAM"], errors="ignore").copy()
+    if team_box.empty:
+        return team_box
+
+    if "MIN" in team_box.columns:
+        team_box["MIN"] = team_box["MIN"].map(lambda value: f"{float(value):.1f}")
+
+    # Streamlit right-aligns numeric columns. Casting display columns to strings
+    # keeps headers and values visually aligned without changing simulator output.
+    for column in team_box.columns:
+        team_box[column] = team_box[column].astype(str)
+    return team_box
+
+
+def left_aligned_frame(rows: object) -> pd.DataFrame:
+    """Convert table data to display strings so Streamlit left-aligns values."""
+    frame = pd.DataFrame(rows).copy()
+    for column in frame.columns:
+        frame[column] = frame[column].astype(str)
+    return frame
+
+
+def score_metric(label: str, score: int, record: dict[str, int]) -> None:
+    """Render a score metric with controlled record arrow direction."""
+    record_text, arrow, class_name = record_indicator(record)
+    arrow_symbol = {"up": "▲", "down": "▼", "flat": "■"}[arrow]
+    st.markdown(
+        f"""
+        <div class="score-metric">
+          <div class="metric-label">{label}</div>
+          <div class="metric-value">{score}</div>
+          <div class="metric-record {class_name}">
+            <span>{arrow_symbol}</span>
+            <span>{record_text}</span>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def metric_styles() -> None:
+    """Inject compact styles for custom score metric cards."""
+    st.markdown(
+        """
+        <style>
+          .score-metric {
+            display: grid;
+            gap: 0.15rem;
+            min-height: 5.4rem;
+            border: 1px solid rgba(128, 128, 128, 0.22);
+            border-radius: 0.5rem;
+            padding: 0.8rem 1rem;
+            background: rgba(128, 128, 128, 0.08);
+          }
+          .metric-label {
+            color: rgba(250, 250, 250, 0.66);
+            font-size: 0.88rem;
+          }
+          .metric-value {
+            color: rgb(250, 250, 250);
+            font-size: 2.15rem;
+            font-weight: 700;
+            line-height: 1.1;
+          }
+          .metric-record {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.92rem;
+            font-weight: 600;
+          }
+          .record-good { color: rgb(35, 173, 92); }
+          .record-bad { color: rgb(255, 75, 75); }
+          .record-even { color: rgba(250, 250, 250, 0.72); }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def display_game_result(result: SimulationResult, records: dict[str, dict[str, int]]) -> None:
     """Render final score, confidence, player box score, and play-by-play."""
+    metric_styles()
     away = result.away_team
     home = result.home_team
     winner = winner_from_result(result)
@@ -108,12 +212,12 @@ def display_game_result(result: SimulationResult, records: dict[str, dict[str, i
     score_cols = st.columns([1, 1, 1])
     with score_cols[0]:
         away_record = records.get(away, {"wins": 0, "losses": 0})
-        st.metric(away, result.score[away], f"{away_record['wins']}-{away_record['losses']}")
+        score_metric(away, result.score[away], away_record)
     with score_cols[1]:
         st.metric("Projected Winner", winner, confidence)
     with score_cols[2]:
         home_record = records.get(home, {"wins": 0, "losses": 0})
-        st.metric(home, result.score[home], f"{home_record['wins']}-{home_record['losses']}")
+        score_metric(home, result.score[home], home_record)
 
     st.progress(away_prob / 100, text=f"{away}: {away_prob}% | {home}: {home_prob}%")
     seed_note = f"Seed {result.seed}"
@@ -129,8 +233,7 @@ def display_game_result(result: SimulationResult, records: dict[str, dict[str, i
     with box_tab:
         for team in [away, home]:
             st.markdown(f"**{team} Box Score**")
-            team_box = box_score[box_score["TEAM"] == team].drop(columns=["TEAM"], errors="ignore")
-            st.dataframe(team_box, hide_index=True, use_container_width=True)
+            st.dataframe(box_score_display_frame(box_score, team), hide_index=True, use_container_width=True)
     with feed_tab:
         st.dataframe(feed, hide_index=True, use_container_width=True)
 
@@ -141,7 +244,7 @@ def display_standings(standings: dict[str, list[dict[str, object]]]) -> None:
     for col, conference in zip(cols, ["West", "East"], strict=True):
         with col:
             st.markdown(f"**{conference} Seeds**")
-            st.dataframe(pd.DataFrame(standings[conference]), hide_index=True, use_container_width=True)
+            st.dataframe(left_aligned_frame(standings[conference]), hide_index=True, use_container_width=True)
 
 
 def display_playoff_result(playoff_result) -> None:
@@ -153,7 +256,7 @@ def display_playoff_result(playoff_result) -> None:
     with play_in_tab:
         for conference in ["West", "East"]:
             st.markdown(f"**{conference} Play-In**")
-            st.dataframe(pd.DataFrame(playoff_result.play_in[conference]), hide_index=True, use_container_width=True)
+            st.dataframe(left_aligned_frame(playoff_result.play_in[conference]), hide_index=True, use_container_width=True)
 
     with bracket_tab:
         for round_data in playoff_result.rounds:
@@ -166,7 +269,7 @@ def display_playoff_result(playoff_result) -> None:
                     )
                     st.markdown(f"**{label}**")
                     st.caption(f"Home court: {series['home_court']}")
-                    st.dataframe(pd.DataFrame(series["games"]), hide_index=True, use_container_width=True)
+                    st.dataframe(left_aligned_frame(series["games"]), hide_index=True, use_container_width=True)
 
 
 def game_tab(simulator: GameSimulator) -> None:
@@ -236,7 +339,7 @@ def main() -> None:
     st.title("Courtside Modeling")
 
     simulator, playoff_simulator = load_simulators()
-    game, playoffs = st.tabs(["Game Simulator", "The Road to the Finals"])
+    game, playoffs = st.tabs(["Single Game", "Playoffs"])
     with game:
         st.header("Game Simulator")
         game_tab(simulator)

@@ -15,6 +15,7 @@ app = Flask(__name__)
 # once and reused across requests. This keeps the demo responsive after launch.
 simulator = GameSimulator()
 playoff_simulator = PlayoffSimulator(simulator)
+PLAYOFF_RESULT_CACHE = {}
 
 TEAM_THEME = {
     "ATL": {"primary": "#e03a3e", "secondary": "#26282a"},
@@ -169,10 +170,6 @@ def prediction_view_model(result):
         "home_prob": home_prob,
         "winner": winner,
         "confidence": confidence,
-        "summary": (
-            f"{TEAM_NAMES.get(winner, winner)} grades out ahead in this simulation behind the final "
-            f"score margin, recent scoring profile, and possession efficiency indicators."
-        ),
     }
 
 
@@ -214,17 +211,6 @@ def comparison_rows(away_team, home_team):
                 else home_team,
             }
         )
-    output.append(
-        {
-            "label": "Head-to-head",
-            "tooltip": "Reserved for direct matchup history.",
-            "away_value": "TBD",
-            "home_value": "TBD",
-            "away_pct": 50,
-            "home_pct": 50,
-            "edge": None,
-        }
-    )
     return output
 
 
@@ -261,6 +247,54 @@ def playoff_team_options(standings):
     ]
 
 
+def box_score_groups(result):
+    """Group box-score rows by team and add a normalized row heat value.
+
+    The heat value is display-only. It gives the Flask table a broader visual
+    gradient across all players on a team instead of only highlighting the first
+    row. Positive stats raise the score; turnovers lower it slightly.
+    """
+    if not result:
+        return {}
+
+    grouped = {}
+    for team in [result.away_team, result.home_team]:
+        rows = [dict(row) for row in result.box_score if row["TEAM"] == team]
+        raw_scores = []
+        for row in rows:
+            raw = (
+                float(row.get("PTS", 0))
+                + 1.2 * float(row.get("REB", 0))
+                + 1.5 * float(row.get("AST", 0))
+                + 0.6 * float(row.get("OREB", 0))
+                + 0.18 * float(row.get("MIN", 0))
+                - 1.1 * float(row.get("TOV", 0))
+            )
+            raw_scores.append(max(raw, 0.0))
+
+        low = min(raw_scores, default=0.0)
+        high = max(raw_scores, default=1.0)
+        span = high - low or 1.0
+
+        for row, raw in zip(rows, raw_scores, strict=True):
+            normalized = (raw - low) / span
+            heat = 0.12 + normalized * 0.58
+            row["HEAT_FULL"] = f"{round(heat * 100, 1)}%"
+            row["HEAT_MID"] = f"{round(heat * 56, 1)}%"
+            row["HEAT_ALT"] = f"{round(heat * 50, 1)}%"
+            row["HEAT_HOVER"] = f"{round(min(heat * 100 + 10, 82), 1)}%"
+            row["HEAT_HOVER_MID"] = f"{round(min(heat * 64, 58), 1)}%"
+        grouped[team] = rows
+    return grouped
+
+
+def cached_playoff_result(seed: int):
+    """Return a playoff simulation, reusing prior results for the same seed."""
+    if seed not in PLAYOFF_RESULT_CACHE:
+        PLAYOFF_RESULT_CACHE[seed] = playoff_simulator.simulate_playoffs(seed=seed)
+    return PLAYOFF_RESULT_CACHE[seed]
+
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     """Render the main Flask app and handle game/playoff simulation requests."""
@@ -271,19 +305,25 @@ def index():
     selected_away = request.form.get("away_team", default_away)
     selected_season = DEFAULT_SEASON
     debug_seed_value = request.form.get("debug_seed", "").strip()
-    selected_path_team = request.form.get("highlight_team", request.args.get("highlight_team", "")).strip()
+    selected_path_team = request.values.get("highlight_team", "").strip()
+    playoff_seed_value = request.values.get("playoff_seed", "").strip()
     result = None
     playoff_result = None
     error = None
+
+    if active_tab == "playoffs" and request.method == "GET" and playoff_seed_value:
+        try:
+            playoff_result = cached_playoff_result(int(playoff_seed_value))
+        except Exception as exc:
+            error = str(exc)
 
     if request.method == "POST":
         try:
             if active_tab == "playoffs":
                 # A provided seed makes the entire bracket reproducible. Without
                 # one, each POST generates a new randomized postseason.
-                playoff_seed_value = request.form.get("playoff_seed", "").strip()
                 playoff_seed = int(playoff_seed_value) if playoff_seed_value else random.randint(1, 999_999)
-                playoff_result = playoff_simulator.simulate_playoffs(seed=playoff_seed)
+                playoff_result = cached_playoff_result(playoff_seed)
             else:
                 # Same idea for a single game: a seed reproduces the final score,
                 # play-by-play feed, and box score exactly.
@@ -313,6 +353,7 @@ def index():
         prediction=prediction_view_model(result),
         comparison_rows=comparison_rows(selected_away, selected_home),
         playoff_summary=playoff_summary(playoff_result),
+        box_scores=box_score_groups(result),
         selected_path_team=selected_path_team,
         result=result,
         playoff_result=playoff_result,
